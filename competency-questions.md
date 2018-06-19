@@ -1,6 +1,7 @@
 # Competency questions
 
 We use the following namespaces:
+```sparql
 prefix sw: <http://ontosoft.org/software#>
 prefix vff: <https://w3id.org/ontosoft-vff/ontology#>
 prefix ex: <https://w3id.org/ontosoft-vff/example#>
@@ -10,6 +11,7 @@ prefix owl:   <http://www.w3.org/2002/07/owl#>
 prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 prefix xsd:   <http://www.w3.org/2001/XMLSchema#> 
 prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> 
+```
 
 **Query 1:** What is the software and software version of the function invoked in the implementation of a given workflow component?
 
@@ -20,10 +22,11 @@ select ?sw ?swVersion where {
 	?sw rdfs:type sw:Software ;
 		sw:hasSoftwareVersion ?swVersion .
 }
+```
+
 | sw | swVersion |
 |----|-----------|
 | ex:Weka | ex:weka.weka3.6.2 |
-```
 
 **Query 2:** Are there any newer versions for a given function?
 
@@ -34,12 +37,11 @@ select ?swVersionNew ?swFunctionNew where {
 	?swFunctionNew rdfs:type vff:SoftwareFunction ;
 		prov:wasRevisionOf ex:weka.weka3.6.2-J48Classifier .
 }
+```
 
 | swVersionNew | swFunctionNew |
 |----|-----------|
 |ex:weka.weka3.9.2|ex:weka.weka3.9.2-J48Classifier|
-
-```
 
 **Query 3:** What are the differences between two versions of
 a given software function?
@@ -63,6 +65,7 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 |-----------|-----------------|---------------|------------|------------------|----------------|
 | ex:software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-r9YRJluCXMRM | ex:software/enumerations#DataFormat-DFNnZMz3EJMI | ex:software/enumerations#DataType-4w8gVQsA6QgV | ex:software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4-0sk6P02oVrVQ | ex:software/enumerations#DataFormat-JAnfHQDDbrec | ex:software/enumerations#DataType-4xI3SRU2pkPU |
 
+```sparql
 select ?inputName ?inputDataFormat ?inputDataType ?outputName
 	?outputDataFormat ?outputDataType where {
 	ex:weka.weka3.9.2-J48Classifier rdfs:type vff:SoftwareFunction ;
@@ -75,6 +78,7 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 		vff:hasOutputDataType ?outputDataType ;
 		vff:hasOutputName ?outputName .
 }
+```
 
 **Query 4:** Are there any similar functions to a given function in newer software versions?
 
