@@ -1,0 +1,1328 @@
+<http://ontosoft.org/software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ontosoft.org/software> <http://www.w3.org/2002/07/owl#imports> <http://ontosoft.org/softwareCategories> .
+<http://ontosoft.org/software> <http://purl.org/dc/terms/created> "2015-03-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://ontosoft.org/software> <http://purl.org/dc/terms/description> "Ontosoft is an ontology to describe software."@en .
+<http://ontosoft.org/software> <http://purl.org/dc/terms/modified> "2018-04-21" .
+<http://ontosoft.org/software> <http://purl.org/dc/terms/title> "The Ontosoft ontology"@en .
+<http://ontosoft.org/software> <http://purl.org/vocab/vann/preferredNamespacePrefix> "osw" .
+<http://ontosoft.org/software> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://ontosoft.org/software#" .
+<http://ontosoft.org/software> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontosoft is an ontology to describe software"@en .
+<http://ontosoft.org/software> <http://www.w3.org/2002/07/owl#versionInfo> "2.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://ontosoft.org/software#category
+<http://ontosoft.org/software#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ontosoft.org/software#category> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of software metadata properties"@en .
+# 
+# http://ontosoft.org/software#isRequired
+<http://ontosoft.org/software#isRequired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ontosoft.org/software#isRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "This property annotation indicates if a property is a required property or not"@en .
+# 
+# http://ontosoft.org/software#searchConfig
+<http://ontosoft.org/software#searchConfig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ontosoft.org/software#searchConfig> <http://www.w3.org/2000/01/rdf-schema#comment> "This property annotation provides information to be handed over to search engines (like Solr) to explain how to tokenize and index the property values"@en .
+# 
+# http://ontosoft.org/software#uiConfig
+<http://ontosoft.org/software#uiConfig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ontosoft.org/software#uiConfig> <http://www.w3.org/2000/01/rdf-schema#comment> "This property annotation provides UI specific information for the property like positioning, special UI interface, etc"@en .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#description
+<http://www.w3.org/2000/01/rdf-schema#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ontosoft.org/software#affectsSoftwareFunction
+<http://ontosoft.org/software#affectsSoftwareFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#affectsSoftwareFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#KnownIssue> .
+<http://ontosoft.org/software#affectsSoftwareFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#affectsSoftwareFunction> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#affectsSoftwareFunction> <http://ontosoft.org/software#uiConfig> "{\"position\": 3}" .
+# 
+# http://ontosoft.org/software#changesSoftwareFunction
+<http://ontosoft.org/software#changesSoftwareFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#changesSoftwareFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareChange> .
+<http://ontosoft.org/software#changesSoftwareFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#changesSoftwareFunction> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#changesSoftwareFunction> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+# 
+# http://ontosoft.org/software#fixedKnownIssue
+<http://ontosoft.org/software#fixedKnownIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#fixedKnownIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#BugFix> .
+<http://ontosoft.org/software#fixedKnownIssue> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#KnownIssue> .
+# 
+# http://ontosoft.org/software#hasActiveDevelopment
+<http://ontosoft.org/software#hasActiveDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasActiveDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasActiveDevelopment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasActiveDevelopment> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DevelopmentInformation> .
+<http://ontosoft.org/software#hasActiveDevelopment> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Contribute> .
+<http://ontosoft.org/software#hasActiveDevelopment> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasActiveDevelopment> <http://purl.org/dc/elements/1.1/description> "How is the software being developed or maintained?"@en .
+# 
+# http://ontosoft.org/software#hasAdopter
+<http://ontosoft.org/software#hasAdopter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasAdopter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasAdopter> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Adopter> .
+<http://ontosoft.org/software#hasAdopter> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasAdopter> <http://ontosoft.org/software#uiConfig> "{\"position\": 3}" .
+<http://ontosoft.org/software#hasAdopter> <http://purl.org/dc/elements/1.1/description> "Has the software been adopted in a project, organization or by a person?" .
+# 
+# http://ontosoft.org/software#hasAverageRunTime
+<http://ontosoft.org/software#hasAverageRunTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasAverageRunTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasAverageRunTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasAverageRunTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#MeasurementEntity> .
+<http://ontosoft.org/software#hasAverageRunTime> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasAverageRunTime> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasAverageRunTime> <http://purl.org/dc/elements/1.1/description> "Do you know how long it takes to run this software version on average?"@en .
+# 
+# http://ontosoft.org/software#hasBenchmarkInformation
+<http://ontosoft.org/software#hasBenchmarkInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasBenchmarkInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasBenchmarkInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#BenchmarkInformation> .
+<http://ontosoft.org/software#hasBenchmarkInformation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasBenchmarkInformation> <http://ontosoft.org/software#uiConfig> "{\"position\":7}" .
+<http://ontosoft.org/software#hasBenchmarkInformation> <http://purl.org/dc/elements/1.1/description> "Is there any benchmark information about the software?"@en .
+# 
+# http://ontosoft.org/software#hasBugFix
+<http://ontosoft.org/software#hasBugFix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasBugFix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasBugFix> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#BugFix> .
+<http://ontosoft.org/software#hasBugFix> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#hasBugFix> <http://purl.org/dc/elements/1.1/description> "Are there any bug fixes that affects this software version?"@en .
+# 
+# http://ontosoft.org/software#hasBugFixDescription
+<http://ontosoft.org/software#hasBugFixDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasBugFixDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasBugFixDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#BugFix> .
+# 
+# http://ontosoft.org/software#hasCitationLocation
+<http://ontosoft.org/software#hasCitationLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCitationLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasCitationLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Citation> .
+<http://ontosoft.org/software#hasCitationLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasCitationLocation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Cite> .
+<http://ontosoft.org/software#hasCitationLocation> <http://purl.org/dc/elements/1.1/description> "What is the URL for the citation?"@en .
+# 
+# http://ontosoft.org/software#hasCitationText
+<http://ontosoft.org/software#hasCitationText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCitationText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasCitationText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Citation> .
+<http://ontosoft.org/software#hasCitationText> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#CitationText> .
+<http://ontosoft.org/software#hasCitationText> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Cite> .
+<http://ontosoft.org/software#hasCitationText> <http://purl.org/dc/elements/1.1/description> "What is the text associated with the Citation?"@en .
+# 
+# http://ontosoft.org/software#hasCodeLocation
+<http://ontosoft.org/software#hasCodeLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCodeLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasCodeLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasCodeLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasCodeLocation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Access> .
+<http://ontosoft.org/software#hasCodeLocation> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasCodeLocation> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasCodeLocation> <http://purl.org/dc/elements/1.1/description> "What is the URL for the code?"@en .
+# 
+# http://ontosoft.org/software#hasCommitmentOfSupport
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasCommitmentOfSupport> <http://purl.org/dc/elements/1.1/description> "How can a user get support for the software? (eg. Report bugs, request features and extensions, etc)"@en .
+# 
+# http://ontosoft.org/software#hasCompatibleSoftware
+<http://ontosoft.org/software#hasCompatibleSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCompatibleSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasCompatibleSoftware> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Composition> .
+<http://ontosoft.org/software#hasCompatibleSoftware> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareDescription> .
+<http://ontosoft.org/software#hasCompatibleSoftware> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Compose> .
+<http://ontosoft.org/software#hasCompatibleSoftware> <http://purl.org/dc/elements/1.1/description> "What software can this software be composed with in a workflow?"@en .
+# 
+# http://ontosoft.org/software#hasCompositionDescription
+<http://ontosoft.org/software#hasCompositionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCompositionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Composition> .
+<http://ontosoft.org/software#hasCompositionDescription> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Compose> .
+<http://ontosoft.org/software#hasCompositionDescription> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasCompositionDescription> <http://purl.org/dc/elements/1.1/description> "Is this software typically used with other software in a workflow? (eg: for visualization, preprocessing, postprocessing, etc)"@en .
+# 
+# http://ontosoft.org/software#hasCreator
+<http://ontosoft.org/software#hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasCreator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/creator> .
+<http://ontosoft.org/software#hasCreator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasCreator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://ontosoft.org/software#hasCreator> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasCreator> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasCreator> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Author\"}" .
+<http://ontosoft.org/software#hasCreator> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasCreator> <http://purl.org/dc/elements/1.1/description> "Who created this software? (Project, Organization, Person, Initiative, etc.)"@en .
+# 
+# http://ontosoft.org/software#hasDependency
+<http://ontosoft.org/software#hasDependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDependency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasDependency> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasDependency> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasDependency> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasDependency> <http://ontosoft.org/software#uiConfig> "{\"position\":5}" .
+<http://ontosoft.org/software#hasDependency> <http://purl.org/dc/elements/1.1/description> "What other software does the software version require to be installed?"@en .
+# 
+# http://ontosoft.org/software#hasDockerImage
+<http://ontosoft.org/software#hasDockerImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDockerImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDockerImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasDockerImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DockerImage> .
+<http://ontosoft.org/software#hasDockerImage> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasDockerImage> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+<http://ontosoft.org/software#hasDockerImage> <http://purl.org/dc/elements/1.1/description> "Is there any docker image available for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasDockerImageIdentifier
+<http://ontosoft.org/software#hasDockerImageIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDockerImageIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDockerImageIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#DockerImage> .
+<http://ontosoft.org/software#hasDockerImageIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Identifier> .
+<http://ontosoft.org/software#hasDockerImageIdentifier> <http://purl.org/dc/elements/1.1/description> "What is the docker image id?"@en .
+# 
+# http://ontosoft.org/software#hasDockerImageInstruction
+<http://ontosoft.org/software#hasDockerImageInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDockerImageInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDockerImageInstruction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#DockerImage> .
+<http://ontosoft.org/software#hasDockerImageInstruction> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DockerImageInstructionInformation> .
+<http://ontosoft.org/software#hasDockerImageInstruction> <http://purl.org/dc/elements/1.1/description> "How to run the docker image instruction?"@en .
+# 
+# http://ontosoft.org/software#hasDockerImageLocation
+<http://ontosoft.org/software#hasDockerImageLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDockerImageLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDockerImageLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#DockerImage> .
+<http://ontosoft.org/software#hasDockerImageLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasDockerImageLocation> <http://purl.org/dc/elements/1.1/description> "What is the URL for pulling this docker image?"@en .
+# 
+# http://ontosoft.org/software#hasDocumentation
+<http://ontosoft.org/software#hasDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasDocumentation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasDocumentation> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasDocumentation> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasDocumentation> <http://purl.org/dc/elements/1.1/description> "Is there any on-line documentation about this software version?"@en .
+# 
+# http://ontosoft.org/software#hasDomainKeywords
+<http://ontosoft.org/software#hasDomainKeywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasDomainKeywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDomainKeywords> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasDomainKeywords> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Keywords> .
+<http://ontosoft.org/software#hasDomainKeywords> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Relate> .
+<http://ontosoft.org/software#hasDomainKeywords> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasDomainKeywords> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasDomainKeywords> <http://purl.org/dc/elements/1.1/description> "What are the domain specific keywords for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasEmailContact
+<http://ontosoft.org/software#hasEmailContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasEmailContact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasEmailContact> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasEmailContact> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Discuss> .
+<http://ontosoft.org/software#hasEmailContact> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+<http://ontosoft.org/software#hasEmailContact> <http://purl.org/dc/elements/1.1/description> "What is the e-mail contact for this software?" .
+# 
+# http://ontosoft.org/software#hasExecutableLocation
+<http://ontosoft.org/software#hasExecutableLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasExecutableLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasExecutableLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasExecutableLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasExecutableLocation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Access> .
+<http://ontosoft.org/software#hasExecutableLocation> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasExecutableLocation> <http://purl.org/dc/elements/1.1/description> "What is the URL for the executable?"@en .
+# 
+# http://ontosoft.org/software#hasFunction
+<http://ontosoft.org/software#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasFunction> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasFunction> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasFunction> <http://purl.org/dc/elements/1.1/description> "What functions does this software version have?" .
+# 
+# http://ontosoft.org/software#hasFunctionDescription
+<http://ontosoft.org/software#hasFunctionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasFunctionDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasFunctionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasFunctionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasFunctionDescription> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasFunctionDescription> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+# 
+# http://ontosoft.org/software#hasFunctionInvocation
+<http://ontosoft.org/software#hasFunctionInvocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasFunctionInvocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasFunctionInvocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasFunctionInvocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#FunctionInvocation> .
+<http://ontosoft.org/software#hasFunctionInvocation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasFunctionInvocation> <http://ontosoft.org/software#uiConfig> "{\"position\":5}" .
+<http://ontosoft.org/software#hasFunctionInvocation> <http://purl.org/dc/elements/1.1/description> "What is the invocation line for this function?"@en .
+# 
+# http://ontosoft.org/software#hasFunctionName
+<http://ontosoft.org/software#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasName> .
+<http://ontosoft.org/software#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasFunctionName> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasFunctionName> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+# 
+# http://ontosoft.org/software#hasFunctionality
+<http://ontosoft.org/software#hasFunctionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasFunctionality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasFunctionality> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Functionality> .
+<http://ontosoft.org/software#hasFunctionality> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasFunctionality> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Functionality\"}" .
+<http://ontosoft.org/software#hasFunctionality> <http://ontosoft.org/software#uiConfig> "{\"position\": 3}" .
+# 
+# http://ontosoft.org/software#hasFundingSources
+<http://ontosoft.org/software#hasFundingSources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasFundingSources> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasFundingSources> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasFundingSources> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasFundingSources> <http://ontosoft.org/software#uiConfig> "{\"position\": 8}" .
+<http://ontosoft.org/software#hasFundingSources> <http://purl.org/dc/elements/1.1/description> "What are the funding sources for this software?" .
+# 
+# http://ontosoft.org/software#hasImplementationLanguage
+<http://ontosoft.org/software#hasImplementationLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#ProgrammingLanguage> .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Programming Language\"}" .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasImplementationLanguage> <http://purl.org/dc/elements/1.1/description> "What language(s) is this software version written in?"@en .
+# 
+# http://ontosoft.org/software#hasInputFile
+<http://ontosoft.org/software#hasInputFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasInputFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFile> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasInputFile> <http://ontosoft.org/software#uiConfig> "{\"position\":6}" .
+<http://ontosoft.org/software#hasInputFile> <http://purl.org/dc/elements/1.1/description> "What input files does this function require?"@en .
+# 
+# http://ontosoft.org/software#hasInputFileArgument
+<http://ontosoft.org/software#hasInputFileArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFileArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputFileArgument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFileArgument> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasInputFileArgument> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasInputFileArgument> <http://purl.org/dc/elements/1.1/description> "What is the argument for this input file?" .
+# 
+# http://ontosoft.org/software#hasInputFileDataFormat
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DataFormat> .
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Input File Data Format\"}" .
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://ontosoft.org/software#uiConfig> "{\"position\":5}" .
+<http://ontosoft.org/software#hasInputFileDataFormat> <http://purl.org/dc/elements/1.1/description> "What is the data format for this input file?"@en .
+# 
+# http://ontosoft.org/software#hasInputFileDataType
+<http://ontosoft.org/software#hasInputFileDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFileDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputFileDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFileDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DataType> .
+<http://ontosoft.org/software#hasInputFileDataType> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasInputFileDataType> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Input File Data Type\"}" .
+<http://ontosoft.org/software#hasInputFileDataType> <http://ontosoft.org/software#uiConfig> "{\"position\":4}" .
+<http://ontosoft.org/software#hasInputFileDataType> <http://purl.org/dc/elements/1.1/description> "What is the input file type?"@en .
+# 
+# http://ontosoft.org/software#hasInputFileDefaultValue
+<http://ontosoft.org/software#hasInputFileDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFileDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputFileDefaultValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFileDefaultValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasInputFileDefaultValue> <http://ontosoft.org/software#uiConfig> "{\"position\":6}" .
+<http://ontosoft.org/software#hasInputFileDefaultValue> <http://purl.org/dc/elements/1.1/description> "What is the default value for this input?" .
+# 
+# http://ontosoft.org/software#hasInputFileDescription
+<http://ontosoft.org/software#hasInputFileDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFileDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasInputFileDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFileDescription> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasInputFileDescription> <http://purl.org/dc/elements/1.1/description> "What is the input description?"@en .
+# 
+# http://ontosoft.org/software#hasInputFileName
+<http://ontosoft.org/software#hasInputFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputFileName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasName> .
+<http://ontosoft.org/software#hasInputFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputFileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+<http://ontosoft.org/software#hasInputFileName> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasInputFileName> <http://purl.org/dc/elements/1.1/description> "What is the input name?"@en .
+# 
+# http://ontosoft.org/software#hasInputParameter
+<http://ontosoft.org/software#hasInputParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasInputParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#InputParameter> .
+<http://ontosoft.org/software#hasInputParameter> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasInputParameter> <http://ontosoft.org/software#uiConfig> "{\"position\": 7}" .
+<http://ontosoft.org/software#hasInputParameter> <http://purl.org/dc/elements/1.1/description> "What are the input parameters used for this function?" .
+# 
+# http://ontosoft.org/software#hasInputParameterArgument
+<http://ontosoft.org/software#hasInputParameterArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputParameterArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputParameterArgument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputParameter> .
+<http://ontosoft.org/software#hasInputParameterArgument> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasInputParameterArgument> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasInputParameterArgument> <http://purl.org/dc/elements/1.1/description> "What is the argument for this input parameter?" .
+# 
+# http://ontosoft.org/software#hasInputParameterDataType
+<http://ontosoft.org/software#hasInputParameterDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputParameter> .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DataType> .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Input Parameter Data Type\"}" .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://ontosoft.org/software#uiConfig> "{\"position\":4}" .
+<http://ontosoft.org/software#hasInputParameterDataType> <http://purl.org/dc/elements/1.1/description> "What is the parameter type?"@en .
+# 
+# http://ontosoft.org/software#hasInputParameterDefaultValue
+<http://ontosoft.org/software#hasInputParameterDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputParameterDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputParameterDefaultValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputParameter> .
+<http://ontosoft.org/software#hasInputParameterDefaultValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasInputParameterDefaultValue> <http://ontosoft.org/software#uiConfig> "{\"position\":5}" .
+<http://ontosoft.org/software#hasInputParameterDefaultValue> <http://purl.org/dc/elements/1.1/description> "What is the default value for this input parameter?" .
+# 
+# http://ontosoft.org/software#hasInputParameterDescription
+<http://ontosoft.org/software#hasInputParameterDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputParameterDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasInputParameterDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputParameter> .
+<http://ontosoft.org/software#hasInputParameterDescription> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasInputParameterDescription> <http://purl.org/dc/elements/1.1/description> "What is the parameter description?"@en .
+# 
+# http://ontosoft.org/software#hasInputParameterName
+<http://ontosoft.org/software#hasInputParameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInputParameterName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasName> .
+<http://ontosoft.org/software#hasInputParameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInputParameterName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputParameter> .
+<http://ontosoft.org/software#hasInputParameterName> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasInputParameterName> <http://purl.org/dc/elements/1.1/description> "What is this parameter name?"@en .
+# 
+# http://ontosoft.org/software#hasInstallationInstructions
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://ontosoft.org/software#uiConfig> "{\"position\":4}" .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://purl.org/dc/elements/1.1/description> "How can one install this software version?"@en .
+# 
+# http://ontosoft.org/software#hasInteroperableSoftware
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareDescription> .
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Compose> .
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasInteroperableSoftware> <http://purl.org/dc/elements/1.1/description> "What other software can interoperate with this one?" .
+# 
+# http://ontosoft.org/software#hasKnownIssue
+<http://ontosoft.org/software#hasKnownIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasKnownIssue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://ontosoft.org/software#hasKnownIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasKnownIssue> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#KnownIssue> .
+<http://ontosoft.org/software#hasKnownIssue> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasKnownIssue> <http://purl.org/dc/elements/1.1/description> "What known issues does this software version have?" .
+# 
+# http://ontosoft.org/software#hasKnownIssueDescription
+<http://ontosoft.org/software#hasKnownIssueDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasKnownIssueDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasKnownIssueDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasKnownIssueDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#KnownIssue> .
+<http://ontosoft.org/software#hasKnownIssueDescription> <http://purl.org/dc/elements/1.1/description> "What description does this known issues have?" .
+# 
+# http://ontosoft.org/software#hasLatestSoftwareVersion
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasSoftwareVersion> .
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#hasLatestSoftwareVersion> <http://purl.org/dc/elements/1.1/description> "What is the latest software version for this software?" .
+# 
+# http://ontosoft.org/software#hasLicense
+<http://ontosoft.org/software#hasLicense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasLicense> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/license> .
+<http://ontosoft.org/software#hasLicense> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasLicense> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#License> .
+<http://ontosoft.org/software#hasLicense> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Access> .
+<http://ontosoft.org/software#hasLicense> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasLicense> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"License\"}" .
+<http://ontosoft.org/software#hasLicense> <http://ontosoft.org/software#uiConfig> "{\"position\": 3}" .
+<http://ontosoft.org/software#hasLicense> <http://purl.org/dc/elements/1.1/description> "What license is the code released under?"@en .
+# 
+# http://ontosoft.org/software#hasMajorContributor
+<http://ontosoft.org/software#hasMajorContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasMajorContributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://ontosoft.org/software#hasMajorContributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasMajorContributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://ontosoft.org/software#hasMajorContributor> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasMajorContributor> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasMajorContributor> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasMajorContributor> <http://purl.org/dc/elements/1.1/description> "Are there any major contributors of note for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasName
+<http://ontosoft.org/software#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasName> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasName> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasName> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasName> <http://purl.org/dc/elements/1.1/description> "What is the software called?"@en .
+# 
+# http://ontosoft.org/software#hasOtherImplementationDetails
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#ImplementationDetails> .
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasOtherImplementationDetails> <http://purl.org/dc/elements/1.1/description> "Are there any other important details about the implementation of this code (parallelization, special hardware, etc)?"@en .
+# 
+# http://ontosoft.org/software#hasOutput
+<http://ontosoft.org/software#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutput> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasOutput> <http://ontosoft.org/software#uiConfig> "{\"position\":8}" .
+<http://ontosoft.org/software#hasOutput> <http://purl.org/dc/elements/1.1/description> "What outputs does this function produce?"@en .
+# 
+# http://ontosoft.org/software#hasOutputArgument
+<http://ontosoft.org/software#hasOutputArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutputArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasOutputArgument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutputArgument> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasOutputArgument> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasOutputArgument> <http://purl.org/dc/elements/1.1/description> "What is the argument for this output?" .
+# 
+# http://ontosoft.org/software#hasOutputDataFormat
+<http://ontosoft.org/software#hasOutputDataFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutputDataFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutputDataFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DataFormat> .
+<http://ontosoft.org/software#hasOutputDataFormat> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasOutputDataFormat> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Output Data Format\"}" .
+<http://ontosoft.org/software#hasOutputDataFormat> <http://ontosoft.org/software#uiConfig> "{\"position\":4}" .
+<http://ontosoft.org/software#hasOutputDataFormat> <http://purl.org/dc/elements/1.1/description> "What is the data format for this output?" .
+# 
+# http://ontosoft.org/software#hasOutputDataType
+<http://ontosoft.org/software#hasOutputDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutputDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasOutputDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutputDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DataType> .
+<http://ontosoft.org/software#hasOutputDataType> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Compose> .
+<http://ontosoft.org/software#hasOutputDataType> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Output Data Type\"}" .
+<http://ontosoft.org/software#hasOutputDataType> <http://ontosoft.org/software#uiConfig> "{\"position\": 3}" .
+<http://ontosoft.org/software#hasOutputDataType> <http://purl.org/dc/elements/1.1/description> "What is the File I/O type?"@en .
+# 
+# http://ontosoft.org/software#hasOutputDefaultValue
+<http://ontosoft.org/software#hasOutputDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutputDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasOutputDefaultValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutputDefaultValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasOutputDefaultValue> <http://ontosoft.org/software#uiConfig> "{\"position\":6}" .
+<http://ontosoft.org/software#hasOutputDefaultValue> <http://purl.org/dc/elements/1.1/description> "What is the default value for this output?" .
+# 
+# http://ontosoft.org/software#hasOutputDescription
+<http://ontosoft.org/software#hasOutputDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutputDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasOutputDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasOutputDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutputDescription> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+<http://ontosoft.org/software#hasOutputDescription> <http://purl.org/dc/elements/1.1/description> "What is the output description?" .
+# 
+# http://ontosoft.org/software#hasOutputName
+<http://ontosoft.org/software#hasOutputName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasOutputName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasName> .
+<http://ontosoft.org/software#hasOutputName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasOutputName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Output> .
+<http://ontosoft.org/software#hasOutputName> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasOutputName> <http://purl.org/dc/elements/1.1/description> "What is the output name?" .
+# 
+# http://ontosoft.org/software#hasPersonIdentifier
+<http://ontosoft.org/software#hasPersonIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasPersonIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Person> .
+<http://ontosoft.org/software#hasPersonIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Identifier> .
+<http://ontosoft.org/software#hasPersonIdentifier> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Identify> .
+<http://ontosoft.org/software#hasPersonIdentifier> <http://ontosoft.org/software#isRequired> "true" .
+<http://ontosoft.org/software#hasPersonIdentifier> <http://purl.org/dc/elements/1.1/description> "Provide a Twitter handle, ORCID Id, email address, github URL, home page, or any other unique identifier for this person"@en .
+# 
+# http://ontosoft.org/software#hasPreferredSoftwareCitation
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Citation> .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Cite> .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasPreferredSoftwareCitation> <http://purl.org/dc/elements/1.1/description> "Is there a preferred publication or citation for this software?"@en .
+# 
+# http://ontosoft.org/software#hasPreferredSoftwareVersionCitation
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Citation> .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Cite> .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasPreferredSoftwareVersionCitation> <http://purl.org/dc/elements/1.1/description> "Is there a preferred publication or citation for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasProjectWebsite
+<http://ontosoft.org/software#hasProjectWebsite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasProjectWebsite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasProjectWebsite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasProjectWebsite> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasProjectWebsite> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasProjectWebsite> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasProjectWebsite> <http://ontosoft.org/software#uiConfig> "{\"position\": 4}" .
+<http://ontosoft.org/software#hasProjectWebsite> <http://purl.org/dc/elements/1.1/description> "Is there a project website for the software?"@en .
+# 
+# http://ontosoft.org/software#hasPublisher
+<http://ontosoft.org/software#hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Publisher> .
+<http://ontosoft.org/software#hasPublisher> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasPublisher> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasPublisher> <http://purl.org/dc/elements/1.1/description> "Who is the publisher of this software?" .
+# 
+# http://ontosoft.org/software#hasRating
+<http://ontosoft.org/software#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Rating> .
+<http://ontosoft.org/software#hasRating> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasRating> <http://ontosoft.org/software#uiConfig> "{\"position\": -1}" .
+<http://ontosoft.org/software#hasRating> <http://purl.org/dc/elements/1.1/description> "What are the ratings for this software?" .
+# 
+# http://ontosoft.org/software#hasRelevantDataSources
+<http://ontosoft.org/software#hasRelevantDataSources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasRelevantDataSources> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasRelevantDataSources> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasRelevantDataSources> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Experiment> .
+<http://ontosoft.org/software#hasRelevantDataSources> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasRelevantDataSources> <http://purl.org/dc/elements/1.1/description> "Are there any relevant data catalogs that can be used with this software version?"@en .
+# 
+# http://ontosoft.org/software#hasSalientQualities
+<http://ontosoft.org/software#hasSalientQualities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSalientQualities> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasSalientQualities> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasSalientQualities> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasSalientQualities> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasSalientQualities> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasSalientQualities> <http://purl.org/dc/elements/1.1/description> "What other useful features of this software version are worth highlighting?"@en .
+# 
+# http://ontosoft.org/software#hasShortDescription
+<http://ontosoft.org/software#hasShortDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasShortDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasShortDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+# 
+# http://ontosoft.org/software#hasSoftwareCategory
+<http://ontosoft.org/software#hasSoftwareCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareCategory> .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Keywords\"}" .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+<http://ontosoft.org/software#hasSoftwareCategory> <http://purl.org/dc/elements/1.1/description> "What are the general categories (keywords, labels) associated with the software?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareChange
+<http://ontosoft.org/software#hasSoftwareChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareChange> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareChange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasSoftwareChange> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareChange> .
+<http://ontosoft.org/software#hasSoftwareChange> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#hasSoftwareChange> <http://purl.org/dc/elements/1.1/description> "What changes does this software version have compared to the previous one?" .
+# 
+# http://ontosoft.org/software#hasSoftwareChangeDescription
+<http://ontosoft.org/software#hasSoftwareChangeDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareChangeDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasSoftwareChangeDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasSoftwareChangeDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareChange> .
+<http://ontosoft.org/software#hasSoftwareChangeDescription> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasSoftwareChangeDescription> <http://purl.org/dc/elements/1.1/description> "What is the change description?" .
+# 
+# http://ontosoft.org/software#hasSoftwareChangeType
+<http://ontosoft.org/software#hasSoftwareChangeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareChangeType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareChange> .
+<http://ontosoft.org/software#hasSoftwareChangeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareChangeType> .
+<http://ontosoft.org/software#hasSoftwareChangeType> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#hasSoftwareChangeType> <http://ontosoft.org/software#uiConfig> "{\"position\": 3}" .
+<http://ontosoft.org/software#hasSoftwareChangeType> <http://purl.org/dc/elements/1.1/description> "What is the software change type?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareCommunity
+<http://ontosoft.org/software#hasSoftwareCommunity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareCommunity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasSoftwareCommunity> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#CommunityInformation> .
+<http://ontosoft.org/software#hasSoftwareCommunity> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Contribute> .
+<http://ontosoft.org/software#hasSoftwareCommunity> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasSoftwareCommunity> <http://purl.org/dc/elements/1.1/description> "Is there any on-line resource for accessing the software community? (eg. Mailing-list, discussion board, wiki, etc)"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareCreatedDate
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DateEntity> .
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasSoftwareCreatedDate> <http://purl.org/dc/elements/1.1/description> "When was the software created?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareDescription
+<http://ontosoft.org/software#hasSoftwareDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasSoftwareDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasSoftwareDescription> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasSoftwareDescription> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasSoftwareDescription> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+<http://ontosoft.org/software#hasSoftwareDescription> <http://purl.org/dc/elements/1.1/description> "What is the description for this software?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareName
+<http://ontosoft.org/software#hasSoftwareName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasName> .
+<http://ontosoft.org/software#hasSoftwareName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+# 
+# http://ontosoft.org/software#hasSoftwareSupport
+<http://ontosoft.org/software#hasSoftwareSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasSoftwareSupport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasSoftwareSupport> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasSoftwareSupport> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Discuss> .
+<http://ontosoft.org/software#hasSoftwareSupport> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasSoftwareSupport> <http://purl.org/dc/elements/1.1/description> "What is the support offered for this software?" .
+# 
+# http://ontosoft.org/software#hasSoftwareVersion
+<http://ontosoft.org/software#hasSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasSoftwareVersion> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#hasSoftwareVersion> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasSoftwareVersion> <http://purl.org/dc/elements/1.1/description> "What versions does this software have?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareVersionDescription
+<http://ontosoft.org/software#hasSoftwareVersionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareVersionDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasShortDescription> .
+<http://ontosoft.org/software#hasSoftwareVersionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasSoftwareVersionDescription> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasSoftwareVersionDescription> <http://ontosoft.org/software#uiConfig> "{\"position\": 2}" .
+<http://ontosoft.org/software#hasSoftwareVersionDescription> <http://purl.org/dc/elements/1.1/description> "What is the description for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport
+<http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DateEntity> .
+<http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport> <http://purl.org/dc/elements/1.1/description> "When is the limit date of support for this version?"@en .
+# 
+# http://ontosoft.org/software#hasSoftwareVersionType
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareVersionType> .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Software Version Type\"}" .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://ontosoft.org/software#uiConfig> "{\"position\": 1}" .
+<http://ontosoft.org/software#hasSoftwareVersionType> <http://purl.org/dc/elements/1.1/description> "What is the software version type (e.g., stable, major version)?"@en .
+# 
+# http://ontosoft.org/software#hasTestData
+<http://ontosoft.org/software#hasTestData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasTestData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasTestData> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TestData> .
+<http://ontosoft.org/software#hasTestData> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasTestData> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasTestData> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasTestData> <http://purl.org/dc/elements/1.1/description> "Do you have any test data for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasTestDataDescription
+<http://ontosoft.org/software#hasTestDataDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasTestDataDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasTestDataDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#TestData> .
+<http://ontosoft.org/software#hasTestDataDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TestDataDescription> .
+<http://ontosoft.org/software#hasTestDataDescription> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasTestDataDescription> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasTestDataDescription> <http://purl.org/dc/elements/1.1/description> "Can you describe the test data?"@en .
+# 
+# http://ontosoft.org/software#hasTestDataLocation
+<http://ontosoft.org/software#hasTestDataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasTestDataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasTestDataLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#TestData> .
+<http://ontosoft.org/software#hasTestDataLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasTestDataLocation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasTestDataLocation> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasTestDataLocation> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasTestDataLocation> <http://purl.org/dc/elements/1.1/description> "What is the URL for test data?"@en .
+# 
+# http://ontosoft.org/software#hasTestInstructions
+<http://ontosoft.org/software#hasTestInstructions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasTestInstructions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasTestInstructions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasTestInstructions> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#TestInstructions> .
+<http://ontosoft.org/software#hasTestInstructions> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#hasTestInstructions> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasTestInstructions> <http://purl.org/dc/elements/1.1/description> "Are there any specific instructions for testing this software version?"@en .
+# 
+# http://ontosoft.org/software#hasUniqueId
+<http://ontosoft.org/software#hasUniqueId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasUniqueId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasUniqueId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasUniqueId> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Identifier> .
+<http://ontosoft.org/software#hasUniqueId> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasUniqueId> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasUniqueId> <http://purl.org/dc/elements/1.1/description> "What is the DOI or any other unique identifier for this software?"@en .
+# 
+# http://ontosoft.org/software#hasUsageInformation
+<http://ontosoft.org/software#hasUsageInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasUsageInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasUsageInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasUsageInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#UsageInformation> .
+<http://ontosoft.org/software#hasUsageInformation> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasUsageInformation> <http://ontosoft.org/software#uiConfig> "{\"position\":4}" .
+<http://ontosoft.org/software#hasUsageInformation> <http://purl.org/dc/elements/1.1/description> "Is there any information about uses of this software version (paper DOIs, research labs, etc)?"@en .
+# 
+# http://ontosoft.org/software#hasUseLimitations
+<http://ontosoft.org/software#hasUseLimitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasUseLimitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasUseLimitations> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasUseLimitations> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#UseLimitations> .
+<http://ontosoft.org/software#hasUseLimitations> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Relate> .
+<http://ontosoft.org/software#hasUseLimitations> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#hasUseLimitations> <http://purl.org/dc/elements/1.1/description> "Are there any constraints on use, situations it is not designed for, simplifications?"@en .
+# 
+# http://ontosoft.org/software#hasUseStatistics
+<http://ontosoft.org/software#hasUseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasUseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasUseStatistics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#hasUseStatistics> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#UsageStatistics> .
+<http://ontosoft.org/software#hasUseStatistics> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#hasUseStatistics> <http://ontosoft.org/software#uiConfig> "{\"position\":5}" .
+<http://ontosoft.org/software#hasUseStatistics> <http://purl.org/dc/elements/1.1/description> "Are there any usage statistics for this software?"@en .
+# 
+# http://ontosoft.org/software#hasUsesAndAssumptions
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#UsesAndAssumptions> .
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Relate> .
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasUsesAndAssumptions> <http://purl.org/dc/elements/1.1/description> "What are the recommended uses and assumptions for this software version?"@en .
+# 
+# http://ontosoft.org/software#hasVersionId
+<http://ontosoft.org/software#hasVersionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasVersionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Identifier> .
+<http://ontosoft.org/software#hasVersionId> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasVersionId> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#hasVersionId> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#hasVersionId> <http://purl.org/dc/elements/1.1/description> "What is the software version id?"@en .
+# 
+# http://ontosoft.org/software#hasVersionReleaseDate
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#DateEntity> .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Locate> .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#hasVersionReleaseDate> <http://purl.org/dc/elements/1.1/description> "When was this version released?"@en .
+# 
+# http://ontosoft.org/software#hasWorkflowDescription
+<http://ontosoft.org/software#hasWorkflowDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasWorkflowDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasWorkflowDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Composition> .
+<http://ontosoft.org/software#hasWorkflowDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#WorkflowDescription> .
+<http://ontosoft.org/software#hasWorkflowDescription> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Compose> .
+<http://ontosoft.org/software#hasWorkflowDescription> <http://purl.org/dc/elements/1.1/description> "Describe the workflow?"@en .
+# 
+# http://ontosoft.org/software#requiresAverageMemory
+<http://ontosoft.org/software#requiresAverageMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#requiresAverageMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#requiresAverageMemory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#requiresAverageMemory> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#MeasurementEntity> .
+<http://ontosoft.org/software#requiresAverageMemory> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#requiresAverageMemory> <http://ontosoft.org/software#uiConfig> "{\"position\":2}" .
+<http://ontosoft.org/software#requiresAverageMemory> <http://purl.org/dc/elements/1.1/description> "Are there any memory requirements for this software version?"@en .
+# 
+# http://ontosoft.org/software#similarSoftware
+<http://ontosoft.org/software#similarSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#similarSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ontosoft.org/software#similarSoftware> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#similarSoftware> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Software> .
+<http://ontosoft.org/software#similarSoftware> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Relate> .
+<http://ontosoft.org/software#similarSoftware> <http://ontosoft.org/software#uiConfig> "{\"position\":1}" .
+<http://ontosoft.org/software#similarSoftware> <http://purl.org/dc/elements/1.1/description> "Is there any other similar software that you know of?"@en .
+# 
+# http://ontosoft.org/software#supersededBy
+<http://ontosoft.org/software#supersededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#supersededBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://ontosoft.org/software#supersedes> .
+<http://ontosoft.org/software#supersededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#supersededBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#supersededBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#supersededBy> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#supersededBy> <http://purl.org/dc/elements/1.1/description> "Which versions replace the current version?" .
+# 
+# http://ontosoft.org/software#supersedes
+<http://ontosoft.org/software#supersedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#supersedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#supersedes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#supersedes> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#supersedes> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Track> .
+<http://ontosoft.org/software#supersedes> <http://purl.org/dc/elements/1.1/description> "What version does this software version supersede?"@en .
+# 
+# http://ontosoft.org/software#supportsOperatingSystem
+<http://ontosoft.org/software#supportsOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#OperatingSystem> .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Install> .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://ontosoft.org/software#isRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Operating System\"}" .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://ontosoft.org/software#uiConfig> "{\"position\":3}" .
+<http://ontosoft.org/software#supportsOperatingSystem> <http://purl.org/dc/elements/1.1/description> "What Operating Systems can this software version run on?"@en .
+# 
+# http://ontosoft.org/software#usedInPublication
+<http://ontosoft.org/software#usedInPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#usedInPublication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#SoftwareVersion> .
+<http://ontosoft.org/software#usedInPublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Citation> .
+<http://ontosoft.org/software#usedInPublication> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Trust> .
+<http://ontosoft.org/software#usedInPublication> <http://ontosoft.org/software#uiConfig> "{\"position\": 6}" .
+<http://ontosoft.org/software#usedInPublication> <http://purl.org/dc/elements/1.1/description> "Are there any publications where this software version is used?"@en .
+# 
+# http://ontosoft.org/software#usesAlgorithm
+<http://ontosoft.org/software#usesAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#usesAlgorithm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Function> .
+<http://ontosoft.org/software#usesAlgorithm> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontosoft.org/software#Algorithm> .
+<http://ontosoft.org/software#usesAlgorithm> <http://ontosoft.org/software#category> <http://ontosoft.org/softwareCategories#Run> .
+<http://ontosoft.org/software#usesAlgorithm> <http://ontosoft.org/software#searchConfig> "{\"facet\":\"Algorithm\"}" .
+<http://ontosoft.org/software#usesAlgorithm> <http://ontosoft.org/software#uiConfig> "{\"position\": 4}" .
+<http://ontosoft.org/software#usesAlgorithm> <http://purl.org/dc/elements/1.1/description> "What is the algorithm used in this function?"@en .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://www.w3.org/ns/prov#wasRevisionOf
+<http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasRevisionOf> <http://purl.org/dc/elements/1.1/description> "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation."@en .
+<http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ontosoft.org/software#hasDateValue
+<http://ontosoft.org/software#hasDateValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasDateValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasDateValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#DateEntity> .
+<http://ontosoft.org/software#hasDateValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontosoft.org/software#hasDateValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Date Value" .
+# 
+# http://ontosoft.org/software#hasInputOrder
+<http://ontosoft.org/software#hasInputOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasInputOrder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasNumericValue> .
+<http://ontosoft.org/software#hasInputOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#InputFile> .
+# 
+# http://ontosoft.org/software#hasNumericValue
+<http://ontosoft.org/software#hasNumericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasNumericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasNumericValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#NumericEntity> .
+<http://ontosoft.org/software#hasNumericValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://ontosoft.org/software#hasNumericValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Numeric Value" .
+# 
+# http://ontosoft.org/software#hasTextValue
+<http://ontosoft.org/software#hasTextValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasTextValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasTextValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#hasTextValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ontosoft.org/software#hasURI
+<http://ontosoft.org/software#hasURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasURI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#Location> .
+<http://ontosoft.org/software#hasURI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontosoft.org/software#hasURI> <http://www.w3.org/2000/01/rdf-schema#label> "has URI"@en .
+# 
+# http://ontosoft.org/software#hasUnits
+<http://ontosoft.org/software#hasUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontosoft.org/software#hasUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontosoft.org/software#MeasurementEntity> .
+<http://ontosoft.org/software#hasUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontosoft.org/software#hasUnits> <http://www.w3.org/2000/01/rdf-schema#label> "has Units" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ontosoft.org/software#Adopter
+<http://ontosoft.org/software#Adopter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Adopter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://ontosoft.org/software#Adopter> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that adopts software"@en .
+<http://ontosoft.org/software#Adopter> <http://www.w3.org/2000/01/rdf-schema#label> "Software Adopter"@en .
+# 
+# http://ontosoft.org/software#Algorithm
+<http://ontosoft.org/software#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+# 
+# http://ontosoft.org/software#BenchmarkInformation
+<http://ontosoft.org/software#BenchmarkInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#BenchmarkInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#BenchmarkInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Software benchmarking information"@en .
+<http://ontosoft.org/software#BenchmarkInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Information"@en .
+# 
+# http://ontosoft.org/software#BugFix
+<http://ontosoft.org/software#BugFix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#BugFix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+# 
+# http://ontosoft.org/software#Citation
+<http://ontosoft.org/software#Citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Citation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+<http://ontosoft.org/software#Citation> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for citing publications with citation next and a citation location"@en .
+<http://ontosoft.org/software#Citation> <http://www.w3.org/2000/01/rdf-schema#label> "Citation"@en .
+# 
+# http://ontosoft.org/software#CitationText
+<http://ontosoft.org/software#CitationText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#CitationText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#CitationText> <http://www.w3.org/2000/01/rdf-schema#comment> "Text associated with a citation"@en .
+<http://ontosoft.org/software#CitationText> <http://www.w3.org/2000/01/rdf-schema#label> "Citation Text"@en .
+# 
+# http://ontosoft.org/software#CommunityInformation
+<http://ontosoft.org/software#CommunityInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#CommunityInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#CommunityInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about any on-line resource for accessing the software community (Mailing-list, discussion board, wiki, etc)"@en .
+<http://ontosoft.org/software#CommunityInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Community Information" .
+# 
+# http://ontosoft.org/software#ComplexEntity
+<http://ontosoft.org/software#ComplexEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#ComplexEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://ontosoft.org/software#ComplexEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity composed of multiple entities"@en .
+<http://ontosoft.org/software#ComplexEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Complex Entity"@en .
+# 
+# http://ontosoft.org/software#Composition
+<http://ontosoft.org/software#Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+<http://ontosoft.org/software#Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes composition of a software with others in a workflow"@en .
+<http://ontosoft.org/software#Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition"@en .
+# 
+# http://ontosoft.org/software#DataFormat
+<http://ontosoft.org/software#DataFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DataFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+# 
+# http://ontosoft.org/software#DataType
+<http://ontosoft.org/software#DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DataType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+# 
+# http://ontosoft.org/software#DateEntity
+<http://ontosoft.org/software#DateEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DateEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://ontosoft.org/software#DateEntity> <http://purl.org/dc/elements/1.1/description> "A date entity"@en .
+<http://ontosoft.org/software#DateEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Date Entity"@en .
+# 
+# http://ontosoft.org/software#DevelopmentInformation
+<http://ontosoft.org/software#DevelopmentInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DevelopmentInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#DevelopmentInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Software development/maintenance description"@en .
+<http://ontosoft.org/software#DevelopmentInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Development Information"@en .
+# 
+# http://ontosoft.org/software#DevelopmentSoftwareVersion
+<http://ontosoft.org/software#DevelopmentSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DevelopmentSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#SoftwareVersion> .
+# 
+# http://ontosoft.org/software#DockerImage
+<http://ontosoft.org/software#DockerImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DockerImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+<http://ontosoft.org/software#DockerImage> <http://www.w3.org/2000/01/rdf-schema#label> "Docker Image" .
+# 
+# http://ontosoft.org/software#DockerImageInstructionInformation
+<http://ontosoft.org/software#DockerImageInstructionInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#DockerImageInstructionInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#DockerImageInstructionInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about how to run the docker image of this software."@en .
+<http://ontosoft.org/software#DockerImageInstructionInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Docker image instruction Information"@en .
+# 
+# http://ontosoft.org/software#EnumerationEntity
+<http://ontosoft.org/software#EnumerationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#EnumerationEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://ontosoft.org/software#EnumerationEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that provides enumeration instances"@en .
+<http://ontosoft.org/software#EnumerationEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Enumeration Entity"@en .
+# 
+# http://ontosoft.org/software#Function
+<http://ontosoft.org/software#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+# 
+# http://ontosoft.org/software#FunctionInvocation
+<http://ontosoft.org/software#FunctionInvocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#FunctionInvocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#FunctionInvocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Software function invocation information"@en .
+<http://ontosoft.org/software#FunctionInvocation> <http://www.w3.org/2000/01/rdf-schema#label> "Software function invocation Information"@en .
+# 
+# http://ontosoft.org/software#Functionality
+<http://ontosoft.org/software#Functionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Functionality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+# 
+# http://ontosoft.org/software#Identifier
+<http://ontosoft.org/software#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A text based identifier"@en .
+<http://ontosoft.org/software#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+# 
+# http://ontosoft.org/software#ImplementationDetails
+<http://ontosoft.org/software#ImplementationDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#ImplementationDetails> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#ImplementationDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Details about implementation of the code (parallelization, etc)"@en .
+<http://ontosoft.org/software#ImplementationDetails> <http://www.w3.org/2000/01/rdf-schema#label> "Implementation Details"@en .
+# 
+# http://ontosoft.org/software#Input
+<http://ontosoft.org/software#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+# 
+# http://ontosoft.org/software#InputFile
+<http://ontosoft.org/software#InputFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#InputFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+<http://ontosoft.org/software#InputFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a file based input to, or file based output from a software"@en .
+<http://ontosoft.org/software#InputFile> <http://www.w3.org/2000/01/rdf-schema#label> "File I/O"@en .
+# 
+# http://ontosoft.org/software#InputFlag
+<http://ontosoft.org/software#InputFlag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#InputFlag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#Input> .
+# 
+# http://ontosoft.org/software#InputParameter
+<http://ontosoft.org/software#InputParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#InputParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#Input> .
+# 
+# http://ontosoft.org/software#Keywords
+<http://ontosoft.org/software#Keywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Keywords> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#Keywords> <http://www.w3.org/2000/01/rdf-schema#comment> "Comma separated keywords associated with the software"@en .
+<http://ontosoft.org/software#Keywords> <http://www.w3.org/2000/01/rdf-schema#label> "Keywords"@en .
+# 
+# http://ontosoft.org/software#KnownIssue
+<http://ontosoft.org/software#KnownIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#KnownIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+<http://ontosoft.org/software#KnownIssue> <http://www.w3.org/2000/01/rdf-schema#label> "Known Issue" .
+# 
+# http://ontosoft.org/software#License
+<http://ontosoft.org/software#License> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#License> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://ontosoft.org/software#License> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of licenses that the software is released under"@en .
+<http://ontosoft.org/software#License> <http://www.w3.org/2000/01/rdf-schema#label> "License"@en .
+# 
+# http://ontosoft.org/software#Location
+<http://ontosoft.org/software#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://ontosoft.org/software#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A Location URL"@en .
+<http://ontosoft.org/software#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://ontosoft.org/software#LongTermRelease
+<http://ontosoft.org/software#LongTermRelease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#LongTermRelease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#SoftwareVersion> .
+# 
+# http://ontosoft.org/software#MajorSoftwareVersion
+<http://ontosoft.org/software#MajorSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#MajorSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#SoftwareVersion> .
+# 
+# http://ontosoft.org/software#MeasurementEntity
+<http://ontosoft.org/software#MeasurementEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#MeasurementEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#NumericEntity> .
+<http://ontosoft.org/software#MeasurementEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A numeric value with units"@en .
+<http://ontosoft.org/software#MeasurementEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement Entity"@en .
+# 
+# http://ontosoft.org/software#MinorSoftwareVersion
+<http://ontosoft.org/software#MinorSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#MinorSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#SoftwareVersion> .
+# 
+# http://ontosoft.org/software#NumericEntity
+<http://ontosoft.org/software#NumericEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#NumericEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://ontosoft.org/software#NumericEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A numeric entity"@en .
+<http://ontosoft.org/software#NumericEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Numeric Entity"@en .
+# 
+# http://ontosoft.org/software#OperatingSystem
+<http://ontosoft.org/software#OperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://ontosoft.org/software#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Operating Systems that the software runs on"@en .
+<http://ontosoft.org/software#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Operating System"@en .
+# 
+# http://ontosoft.org/software#Output
+<http://ontosoft.org/software#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+# 
+# http://ontosoft.org/software#Person
+<http://ontosoft.org/software#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://ontosoft.org/software#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A Person identifier class"@en .
+<http://ontosoft.org/software#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://ontosoft.org/software#ProgrammingLanguage
+<http://ontosoft.org/software#ProgrammingLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#ProgrammingLanguage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://ontosoft.org/software#ProgrammingLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of programming languages"@en .
+<http://ontosoft.org/software#ProgrammingLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Programming Language"@en .
+# 
+# http://ontosoft.org/software#Publisher
+<http://ontosoft.org/software#Publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Publisher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://ontosoft.org/software#Publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that publishes software."@en .
+<http://ontosoft.org/software#Publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Software Publisher"@en .
+# 
+# http://ontosoft.org/software#Rating
+<http://ontosoft.org/software#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of a software" .
+<http://ontosoft.org/software#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://ontosoft.org/software#RevisionSoftwareVersion
+<http://ontosoft.org/software#RevisionSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#RevisionSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#SoftwareVersion> .
+# 
+# http://ontosoft.org/software#ShortTermRelease
+<http://ontosoft.org/software#ShortTermRelease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#ShortTermRelease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#SoftwareVersion> .
+# 
+# http://ontosoft.org/software#Software
+<http://ontosoft.org/software#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://ontosoft.org/software#Software> <http://www.w3.org/2000/01/rdf-schema#comment> "A Software is any piece of code that is described in Ontosoft. This could some visualisation software, software package, library, componentised scripts, etc. This can be subclassed if software categories with extra properties are required, otherwise one should use SoftwareTag to categorise software."@en .
+<http://ontosoft.org/software#Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software"@en .
+# 
+# http://ontosoft.org/software#SoftwareCategory
+<http://ontosoft.org/software#SoftwareCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#SoftwareCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://ontosoft.org/software#SoftwareCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A software can be tagged with multiple categories. Multiple instances can be created of this, and it can also be subclassed to have hierarchical categories"@en .
+<http://ontosoft.org/software#SoftwareCategory> <http://www.w3.org/2000/01/rdf-schema#label> "SoftwareCategory"@en .
+# 
+# http://ontosoft.org/software#SoftwareChange
+<http://ontosoft.org/software#SoftwareChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#SoftwareChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+# 
+# http://ontosoft.org/software#SoftwareChangeType
+<http://ontosoft.org/software#SoftwareChangeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#SoftwareChangeType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+# 
+# http://ontosoft.org/software#SoftwareDescription
+<http://ontosoft.org/software#SoftwareDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#SoftwareDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#SoftwareDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An informal text-based description of software"@en .
+<http://ontosoft.org/software#SoftwareDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Software Description"@en .
+# 
+# http://ontosoft.org/software#SoftwareVersion
+<http://ontosoft.org/software#SoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://ontosoft.org/software#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "A version of a piece of software described by ontosoft"@en .
+<http://ontosoft.org/software#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Software Version"@en .
+# 
+# http://ontosoft.org/software#SoftwareVersionType
+<http://ontosoft.org/software#SoftwareVersionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#SoftwareVersionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+# 
+# http://ontosoft.org/software#TestData
+<http://ontosoft.org/software#TestData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#TestData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#ComplexEntity> .
+<http://ontosoft.org/software#TestData> <http://www.w3.org/2000/01/rdf-schema#comment> "TestData is used to describe test datasets for the software"@en .
+<http://ontosoft.org/software#TestData> <http://www.w3.org/2000/01/rdf-schema#label> "Test Data"@en .
+# 
+# http://ontosoft.org/software#TestDataDescription
+<http://ontosoft.org/software#TestDataDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#TestDataDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#TestDataDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the Test Data provided"@en .
+<http://ontosoft.org/software#TestDataDescription> <http://www.w3.org/2000/01/rdf-schema#label> "TestData Description"@en .
+# 
+# http://ontosoft.org/software#TestInstructions
+<http://ontosoft.org/software#TestInstructions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#TestInstructions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#TestInstructions> <http://www.w3.org/2000/01/rdf-schema#comment> "Instructions on how to run the test with the provided test data including test cases, setup instructions, etc."@en .
+<http://ontosoft.org/software#TestInstructions> <http://www.w3.org/2000/01/rdf-schema#label> "Test Instructions"@en .
+# 
+# http://ontosoft.org/software#TextEntity
+<http://ontosoft.org/software#TextEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#TextEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://ontosoft.org/software#TextEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A text entity"@en .
+<http://ontosoft.org/software#TextEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Text Entity"@en .
+# 
+# http://ontosoft.org/software#UsageInformation
+<http://ontosoft.org/software#UsageInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#UsageInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#UsageInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about uses of this software (paper dois, research labs, etc)"@en .
+<http://ontosoft.org/software#UsageInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Usage Information"@en .
+# 
+# http://ontosoft.org/software#UsageStatistics
+<http://ontosoft.org/software#UsageStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#UsageStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#UsageStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Statistics about software use (downloads, frequency of use, etc)"@en .
+<http://ontosoft.org/software#UsageStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "Usage Statistics"@en .
+# 
+# http://ontosoft.org/software#UseLimitations
+<http://ontosoft.org/software#UseLimitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#UseLimitations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#UseLimitations> <http://www.w3.org/2000/01/rdf-schema#comment> "Constraints on use of the software, any simplifications, situations it isn't designed for"@en .
+<http://ontosoft.org/software#UseLimitations> <http://www.w3.org/2000/01/rdf-schema#label> "Use Limitations"@en .
+# 
+# http://ontosoft.org/software#UsesAndAssumptions
+<http://ontosoft.org/software#UsesAndAssumptions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#UsesAndAssumptions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#UsesAndAssumptions> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of how the software is used, and any assumptions made for using the software"@en .
+<http://ontosoft.org/software#UsesAndAssumptions> <http://www.w3.org/2000/01/rdf-schema#label> "Uses and Assumptions"@en .
+# 
+# http://ontosoft.org/software#WorkflowDescription
+<http://ontosoft.org/software#WorkflowDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontosoft.org/software#WorkflowDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://ontosoft.org/software#WorkflowDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes use of the software with other software in a workflow"@en .
+<http://ontosoft.org/software#WorkflowDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Workflow Description"@en .
+# 
+# http://purl.org/dc/terms/Parameter
+<http://purl.org/dc/terms/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#TextEntity> .
+<http://purl.org/dc/terms/Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a parameter used by a software" .
+<http://purl.org/dc/terms/Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter" .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#EnumerationEntity> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

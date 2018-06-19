@@ -1,0 +1,5473 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://ontosoft.org/software", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://ontosoft.org/softwareCategories" ],
+    "title" : {
+      "en" : "The Ontosoft ontology"
+    },
+    "iri" : "http://ontosoft.org/software",
+    "version" : "2.0",
+    "description" : {
+      "en" : "Ontosoft is an ontology to describe software."
+    },
+    "comments" : {
+      "en" : "Ontosoft is an ontology to describe software"
+    },
+    "other" : {
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2015-03-12",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "osw",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-04-21",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/software#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Ontosoft ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 62,
+    "objectPropertyCount" : 108,
+    "datatypePropertyCount" : 6,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "117",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "144",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "156",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "94",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "221",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "222",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "50",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "62",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "193",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "212",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://ontosoft.org/software#Citation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Citation",
+      "en" : "Citation"
+    },
+    "comment" : {
+      "en" : "Used for citing publications with citation next and a citation location"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Person",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "comment" : {
+      "en" : "A Person identifier class"
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Run",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Run",
+      "en" : "Run"
+    },
+    "comment" : {
+      "en" : "testing execution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#DockerImage",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DockerImage",
+      "undefined" : "Docker Image"
+    },
+    "id" : "24",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#DevelopmentSoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DevelopmentSoftwareVersion"
+    },
+    "id" : "41",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#InputFlag",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InputFlag"
+    },
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Software",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Software",
+      "en" : "Software"
+    },
+    "comment" : {
+      "en" : "A Software is any piece of code that is described in Ontosoft. This could some visualisation software, software package, library, componentised scripts, etc. This can be subclassed if software categories with extra properties are required, otherwise one should use SoftwareTag to categorise software."
+    },
+    "id" : "5",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Track",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Track",
+      "en" : "Track"
+    },
+    "comment" : {
+      "en" : "versions"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#LongTermRelease",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongTermRelease"
+    },
+    "id" : "57",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#InputFile",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InputFile",
+      "en" : "File I/O"
+    },
+    "comment" : {
+      "en" : "Indicates a file based input to, or file based output from a software"
+    },
+    "id" : "39",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#TestInstructions",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestInstructions",
+      "en" : "Test Instructions"
+    },
+    "comment" : {
+      "en" : "Instructions on how to run the test with the provided test data including test cases, setup instructions, etc."
+    },
+    "id" : "63",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#TestDataDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestDataDescription",
+      "en" : "TestData Description"
+    },
+    "comment" : {
+      "en" : "Description of the Test Data provided"
+    },
+    "id" : "67",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "2", "70", "71" ],
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#SoftwareCategory",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareCategory",
+      "en" : "SoftwareCategory"
+    },
+    "comment" : {
+      "en" : "A software can be tagged with multiple categories. Multiple instances can be created of this, and it can also be subclassed to have hierarchical categories"
+    },
+    "id" : "75",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#UsesAndAssumptions",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsesAndAssumptions",
+      "en" : "Uses and Assumptions"
+    },
+    "comment" : {
+      "en" : "Description of how the software is used, and any assumptions made for using the software"
+    },
+    "id" : "76",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#EnumerationEntity",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnumerationEntity",
+      "en" : "Enumeration Entity"
+    },
+    "subClasses" : [ "26", "10", "5", "75", "79", "80", "6", "65", "81", "82", "3", "83", "84" ],
+    "comment" : {
+      "en" : "An entity that provides enumeration instances"
+    },
+    "id" : "48",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Research",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":4}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Research",
+      "en" : "Do Research"
+    },
+    "subClasses" : [ "87", "88", "89" ],
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#UsageStatistics",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageStatistics",
+      "en" : "Usage Statistics"
+    },
+    "comment" : {
+      "en" : "Statistics about software use (downloads, frequency of use, etc)"
+    },
+    "id" : "90",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Execute",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Execute",
+      "en" : "Execute"
+    },
+    "subClasses" : [ "22", "95", "96" ],
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#SoftwareChangeType",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareChangeType"
+    },
+    "id" : "83",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#ImplementationDetails",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplementationDetails",
+      "en" : "Implementation Details"
+    },
+    "comment" : {
+      "en" : "Details about implementation of the code (parallelization, etc)"
+    },
+    "id" : "102",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#RevisionSoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RevisionSoftwareVersion"
+    },
+    "id" : "104",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Experiment",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Experiment",
+      "en" : "Experiment"
+    },
+    "comment" : {
+      "en" : "run with other data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "89",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Adopter",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Adopter",
+      "en" : "Software Adopter"
+    },
+    "comment" : {
+      "en" : "An agent that adopts software"
+    },
+    "id" : "71",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#MeasurementEntity",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurementEntity",
+      "en" : "Measurement Entity"
+    },
+    "comment" : {
+      "en" : "A numeric value with units"
+    },
+    "id" : "30",
+    "superClasses" : [ "107" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Understand",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Understand",
+      "en" : "Understand"
+    },
+    "subClasses" : [ "113", "114" ],
+    "attributes" : [ "external" ],
+    "id" : "112",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#DateEntity",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "description" : {
+      "en" : "A date entity"
+    },
+    "label" : {
+      "IRI-based" : "DateEntity",
+      "en" : "Date Entity"
+    },
+    "id" : "55",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#DataType",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataType"
+    },
+    "id" : "84",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Output",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "id" : "28",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#FunctionInvocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionInvocation",
+      "en" : "Software function invocation Information"
+    },
+    "comment" : {
+      "en" : "Software function invocation information"
+    },
+    "id" : "119",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Functionality",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Functionality"
+    },
+    "id" : "10",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Contribute",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Contribute",
+      "en" : "Contribute"
+    },
+    "comment" : {
+      "en" : "evolution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#WorkflowDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkflowDescription",
+      "en" : "Workflow Description"
+    },
+    "comment" : {
+      "en" : "Describes use of the software with other software in a workflow"
+    },
+    "id" : "138",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Input",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input"
+    },
+    "subClasses" : [ "46", "13" ],
+    "id" : "47",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#BugFix",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BugFix"
+    },
+    "id" : "116",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#SoftwareChange",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareChange"
+    },
+    "id" : "58",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#KnownIssue",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KnownIssue",
+      "undefined" : "Known Issue"
+    },
+    "id" : "132",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Relate",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Relate",
+      "en" : "Relate"
+    },
+    "comment" : {
+      "en" : "domain knowledge"
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Compose",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Compose",
+      "en" : "Compose"
+    },
+    "comment" : {
+      "en" : "run with other software"
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Function",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Function"
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#UseLimitations",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UseLimitations",
+      "en" : "Use Limitations"
+    },
+    "comment" : {
+      "en" : "Constraints on use of the software, any simplifications, situations it isn't designed for"
+    },
+    "id" : "159",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Publisher",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Publisher",
+      "en" : "Software Publisher"
+    },
+    "comment" : {
+      "en" : "An agent that publishes software."
+    },
+    "id" : "70",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Composition",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Composition",
+      "en" : "Composition"
+    },
+    "comment" : {
+      "en" : "Describes composition of a software with others in a workflow"
+    },
+    "id" : "122",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#ComplexEntity",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComplexEntity",
+      "en" : "Complex Entity"
+    },
+    "subClasses" : [ "39", "0", "28", "24", "132", "37", "122", "9", "47", "116", "58" ],
+    "comment" : {
+      "en" : "An entity composed of multiple entities"
+    },
+    "id" : "1",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "1", "48", "73", "107", "40", "55" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Identify",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Identify",
+      "undefined" : "Identify"
+    },
+    "subClasses" : [ "166" ],
+    "comment" : {
+      "undefined" : "Properties that identify how to refer to a resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "165",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Rating",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "comment" : {
+      "undefined" : "Rating of a software"
+    },
+    "id" : "137",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Install",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Install",
+      "en" : "Install"
+    },
+    "comment" : {
+      "en" : "execution requirements"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Locate",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Locate",
+      "undefined" : "Locate"
+    },
+    "comment" : {
+      "undefined" : "unique description"
+    },
+    "attributes" : [ "external" ],
+    "id" : "166",
+    "superClasses" : [ "165" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#TestData",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestData",
+      "en" : "Test Data"
+    },
+    "comment" : {
+      "en" : "TestData is used to describe test datasets for the software"
+    },
+    "id" : "37",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Cite",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Cite",
+      "en" : "Cite"
+    },
+    "comment" : {
+      "en" : "scientific publications"
+    },
+    "attributes" : [ "external" ],
+    "id" : "88",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#CitationText",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CitationText",
+      "en" : "Citation Text"
+    },
+    "comment" : {
+      "en" : "Text associated with a citation"
+    },
+    "id" : "154",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#MinorSoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MinorSoftwareVersion"
+    },
+    "id" : "183",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "125",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "117",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "144",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Trust",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Trust",
+      "en" : "Trust"
+    },
+    "comment" : {
+      "en" : "quality and ratings"
+    },
+    "attributes" : [ "external" ],
+    "id" : "113",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "141",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "156",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "94",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://ontosoft.org/software#DataFormat",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataFormat"
+    },
+    "id" : "79",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#ProgrammingLanguage",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProgrammingLanguage",
+      "en" : "Programming Language"
+    },
+    "comment" : {
+      "en" : "The class of programming languages"
+    },
+    "id" : "80",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#DockerImageInstructionInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DockerImageInstructionInformation",
+      "en" : "Docker image instruction Information"
+    },
+    "comment" : {
+      "en" : "Information about how to run the docker image of this software."
+    },
+    "id" : "45",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#SoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareVersion",
+      "en" : "Software Version"
+    },
+    "subClasses" : [ "193", "194", "183", "57", "41", "104" ],
+    "comment" : {
+      "en" : "A version of a piece of software described by ontosoft"
+    },
+    "id" : "6",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#NumericEntity",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NumericEntity",
+      "en" : "Numeric Entity"
+    },
+    "subClasses" : [ "30" ],
+    "comment" : {
+      "en" : "A numeric entity"
+    },
+    "id" : "107",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#UsageInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageInformation",
+      "en" : "Usage Information"
+    },
+    "comment" : {
+      "en" : "Information about uses of this software (paper dois, research labs, etc)"
+    },
+    "id" : "185",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#TextEntity",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextEntity",
+      "en" : "Text Entity"
+    },
+    "subClasses" : [ "110", "159", "102", "76", "212", "45", "69", "147", "123", "154", "119", "63", "90", "137", "185", "213", "67", "138", "43" ],
+    "comment" : {
+      "en" : "A text entity"
+    },
+    "id" : "40",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#GetSupport",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":5}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GetSupport",
+      "undefined" : "Get Support"
+    },
+    "subClasses" : [ "222" ],
+    "comment" : {
+      "undefined" : "All the properties that relate to describing how to get support from a community"
+    },
+    "attributes" : [ "external" ],
+    "id" : "221",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#BenchmarkInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkInformation",
+      "en" : "Benchmark Information"
+    },
+    "comment" : {
+      "en" : "Software benchmarking information"
+    },
+    "id" : "110",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Location",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "comment" : {
+      "en" : "A Location URL"
+    },
+    "id" : "73",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Access",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Access",
+      "en" : "Access"
+    },
+    "comment" : {
+      "en" : "download"
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Discuss",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Discuss",
+      "en" : "Discuss"
+    },
+    "comment" : {
+      "en" : "support and community"
+    },
+    "attributes" : [ "external" ],
+    "id" : "222",
+    "superClasses" : [ "221" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Keywords",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Keywords",
+      "en" : "Keywords"
+    },
+    "comment" : {
+      "en" : "Comma separated keywords associated with the software"
+    },
+    "id" : "147",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Algorithm",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Algorithm"
+    },
+    "id" : "26",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#MetadataCategory",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetadataCategory",
+      "en" : "Metadata Category"
+    },
+    "subClasses" : [ "85", "165", "23", "53", "112", "221" ],
+    "comment" : {
+      "en" : "Categories of metadata properties are defined as subclass of this"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "192",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "14",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://ontosoft.org/software#CommunityInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommunityInformation",
+      "undefined" : "Community Information"
+    },
+    "comment" : {
+      "en" : "Information about any on-line resource for accessing the software community (Mailing-list, discussion board, wiki, etc)"
+    },
+    "id" : "69",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "163",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "50",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "62",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://ontosoft.org/software#License",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "License",
+      "en" : "License"
+    },
+    "comment" : {
+      "en" : "A class of licenses that the software is released under"
+    },
+    "id" : "65",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#ShortTermRelease",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShortTermRelease"
+    },
+    "id" : "193",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#MajorSoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MajorSoftwareVersion"
+    },
+    "id" : "194",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://ontosoft.org/software#DevelopmentInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DevelopmentInformation",
+      "en" : "Development Information"
+    },
+    "comment" : {
+      "en" : "Software development/maintenance description"
+    },
+    "id" : "213",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/Parameter",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "undefined" : "Parameter"
+    },
+    "comment" : {
+      "undefined" : "Indicates a parameter used by a software"
+    },
+    "attributes" : [ "external" ],
+    "id" : "212",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#SoftwareDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareDescription",
+      "en" : "Software Description"
+    },
+    "comment" : {
+      "en" : "An informal text-based description of software"
+    },
+    "id" : "123",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/softwareCategories#Update",
+    "baseIri" : "http://ontosoft.org/softwareCategories",
+    "instances" : 0,
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":6}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Update",
+      "en" : "Update"
+    },
+    "subClasses" : [ "52", "135" ],
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#SoftwareVersionType",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareVersionType"
+    },
+    "id" : "81",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#OperatingSystem",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperatingSystem",
+      "en" : "Operating System"
+    },
+    "comment" : {
+      "en" : "Operating Systems that the software runs on"
+    },
+    "id" : "82",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Identifier",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Identifier",
+      "en" : "Identifier"
+    },
+    "comment" : {
+      "en" : "A text based identifier"
+    },
+    "id" : "43",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#InputParameter",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InputParameter"
+    },
+    "id" : "13",
+    "superClasses" : [ "47" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "235",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "249",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "254",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "264",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "268",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "269",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "270",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "271",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "282",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "283",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "284",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "289",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://ontosoft.org/software#hasLatestSoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "6",
+    "description" : {
+      "undefined" : "What is the latest software version for this software?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLatestSoftwareVersion"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasFunctionality",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "10",
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Functionality\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFunctionality"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasPreferredSoftwareVersionCitation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "0",
+    "description" : {
+      "en" : "Is there a preferred publication or citation for this software version?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Cite",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPreferredSoftwareVersionCitation"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputParameterName",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "14",
+    "description" : {
+      "en" : "What is this parameter name?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputParameterName"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "13",
+    "attributes" : [ "object", "functional" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/dc/terms/date",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "date"
+    },
+    "domain" : "17",
+    "subproperty" : [ "18", "19", "20" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://ontosoft.org/software#supersedes",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "6",
+    "description" : {
+      "en" : "What version does this software version supersede?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "supersedes"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://ontosoft.org/software#usesAlgorithm",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "26",
+    "description" : {
+      "en" : "What is the algorithm used in this function?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Algorithm\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usesAlgorithm"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutput",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "28",
+    "description" : {
+      "en" : "What outputs does this function produce?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":8}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutput"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasUnits",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasUnits",
+      "undefined" : "has Units"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "17",
+    "subproperty" : [ "33", "34", "35" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasTestData",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "37",
+    "description" : {
+      "en" : "Do you have any test data for this software version?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTestData"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFileDefaultValue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the default value for this input?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":6}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFileDefaultValue"
+    },
+    "domain" : "39",
+    "attributes" : [ "object", "functional" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasVersionId",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "43",
+    "description" : {
+      "en" : "What is the software version id?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVersionId"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDockerImageInstruction",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "45",
+    "description" : {
+      "en" : "How to run the docker image instruction?"
+    },
+    "label" : {
+      "IRI-based" : "hasDockerImageInstruction"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "functional" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFileDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "50",
+    "description" : {
+      "en" : "What is the input description?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFileDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDateValue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasDateValue",
+      "undefined" : "has Date Value"
+    },
+    "domain" : "55",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareChange",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "58",
+    "description" : {
+      "undefined" : "What changes does this software version have compared to the previous one?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareChange"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInstallationInstructions",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "en" : "How can one install this software version?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInstallationInstructions"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFileName",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "50",
+    "description" : {
+      "en" : "What is the input name?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFileName"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "39",
+    "attributes" : [ "object", "functional" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasFunctionDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "62",
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFunctionDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasLicense",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "65",
+    "description" : {
+      "en" : "What license is the code released under?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Access",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"License\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLicense"
+    },
+    "superproperty" : [ "66" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareCommunity",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "69",
+    "description" : {
+      "en" : "Is there any on-line resource for accessing the software community? (eg. Mailing-list, discussion board, wiki, etc)"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Contribute",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareCommunity"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasURI",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasURI",
+      "en" : "has URI"
+    },
+    "domain" : "73",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareSupport",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the support offered for this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Discuss",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareSupport"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputOrder",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasInputOrder"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareVersionDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "94",
+    "description" : {
+      "en" : "What is the description for this software version?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareVersionDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasRelevantDataSources",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "en" : "Are there any relevant data catalogs that can be used with this software version?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Experiment",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRelevantDataSources"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDockerImageIdentifier",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "43",
+    "description" : {
+      "en" : "What is the docker image id?"
+    },
+    "label" : {
+      "IRI-based" : "hasDockerImageIdentifier"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "functional" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://purl.org/dc/terms/contributor",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contributor"
+    },
+    "domain" : "17",
+    "subproperty" : [ "100" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasUsesAndAssumptions",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "76",
+    "description" : {
+      "en" : "What are the recommended uses and assumptions for this software version?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Relate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUsesAndAssumptions"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasAdopter",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "71",
+    "description" : {
+      "undefined" : "Has the software been adopted in a project, organization or by a person?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAdopter"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://ontosoft.org/software#supportsOperatingSystem",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "82",
+    "description" : {
+      "en" : "What Operating Systems can this software version run on?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Operating System\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "supportsOperatingSystem"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasNumericValue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasNumericValue",
+      "undefined" : "has Numeric Value"
+    },
+    "domain" : "107",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasBenchmarkInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "110",
+    "description" : {
+      "en" : "Is there any benchmark information about the software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":7}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBenchmarkInformation"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareChangeType",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "83",
+    "description" : {
+      "en" : "What is the software change type?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareChangeType"
+    },
+    "domain" : "58",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasBugFixDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "hasBugFixDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "116",
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareCreatedDate",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "55",
+    "description" : {
+      "en" : "When was the software created?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareCreatedDate"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputParameterDataType",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "84",
+    "description" : {
+      "en" : "What is the parameter type?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Input Parameter Data Type\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputParameterDataType"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "functional" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFileDataFormat",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "79",
+    "description" : {
+      "en" : "What is the data format for this input file?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":5}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Input File Data Format\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFileDataFormat"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCompatibleSoftware",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "123",
+    "description" : {
+      "en" : "What software can this software be composed with in a workflow?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Compose",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCompatibleSoftware"
+    },
+    "domain" : "122",
+    "attributes" : [ "object", "functional" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareCategory",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "75",
+    "description" : {
+      "en" : "What are the general categories (keywords, labels) associated with the software?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Keywords\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareCategory"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasName",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "en" : "What is the software called?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "125",
+    "subproperty" : [ "126", "127", "12", "60", "128" ],
+    "attributes" : [ "object", "functional" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasFunctionInvocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "119",
+    "description" : {
+      "en" : "What is the invocation line for this function?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":5}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFunctionInvocation"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCitationLocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "What is the URL for the citation?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Cite",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCitationLocation"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "functional" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutputArgument",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the argument for this output?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputArgument"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "functional" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasKnownIssue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "132",
+    "description" : {
+      "undefined" : "What known issues does this software version have?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasKnownIssue"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDockerImage",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "24",
+    "description" : {
+      "en" : "Is there any docker image available for this software version?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDockerImage"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasTestDataLocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "What is the URL for test data?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTestDataLocation"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "functional" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasVersionReleaseDate",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "55",
+    "description" : {
+      "en" : "When was this version released?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVersionReleaseDate"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasRating",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "137",
+    "description" : {
+      "undefined" : "What are the ratings for this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": -1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasFunction",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "9",
+    "description" : {
+      "undefined" : "What functions does this software version have?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFunction"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareChangeDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "141",
+    "description" : {
+      "undefined" : "What is the change description?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareChangeDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "58",
+    "attributes" : [ "object", "functional" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFile",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "39",
+    "description" : {
+      "en" : "What input files does this function require?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":6}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFile"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasKnownIssueDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "144",
+    "description" : {
+      "undefined" : "What description does this known issues have?"
+    },
+    "label" : {
+      "IRI-based" : "hasKnownIssueDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "132",
+    "attributes" : [ "object", "functional" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareVersionType",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "81",
+    "description" : {
+      "en" : "What is the software version type (e.g., stable, major version)?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Software Version Type\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareVersionType"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDomainKeywords",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "147",
+    "description" : {
+      "en" : "What are the domain specific keywords for this software version?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Relate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDomainKeywords"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputParameterDefaultValue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the default value for this input parameter?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":5}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputParameterDefaultValue"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "functional" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasPublisher",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "70",
+    "description" : {
+      "undefined" : "Who is the publisher of this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPublisher"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSalientQualities",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "en" : "What other useful features of this software version are worth highlighting?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSalientQualities"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://ontosoft.org/software#usedInPublication",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "0",
+    "description" : {
+      "en" : "Are there any publications where this software version is used?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 6}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedInPublication"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareVersion",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "6",
+    "description" : {
+      "en" : "What versions does this software have?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareVersion"
+    },
+    "domain" : "5",
+    "subproperty" : [ "4" ],
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://ontosoft.org/software#affectsSoftwareFunction",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "9",
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affectsSoftwareFunction"
+    },
+    "domain" : "132",
+    "attributes" : [ "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCitationText",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "154",
+    "description" : {
+      "en" : "What is the text associated with the Citation?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Cite",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCitationText"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "functional" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "156",
+    "description" : {
+      "en" : "What is the description for this software?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasFundingSources",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What are the funding sources for this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 8}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFundingSources"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://ontosoft.org/software#changesSoftwareFunction",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "9",
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "changesSoftwareFunction"
+    },
+    "domain" : "58",
+    "attributes" : [ "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasMajorContributor",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "3",
+    "description" : {
+      "en" : "Are there any major contributors of note for this software version?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMajorContributor"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://ontosoft.org/software#requiresAverageMemory",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "30",
+    "description" : {
+      "en" : "Are there any memory requirements for this software version?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requiresAverageMemory"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "160"
+  }, {
+    "range" : "48",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://ontosoft.org/software#fixedKnownIssue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "132",
+    "label" : {
+      "IRI-based" : "fixedKnownIssue"
+    },
+    "domain" : "116",
+    "attributes" : [ "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutputName",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "163",
+    "description" : {
+      "undefined" : "What is the output name?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputName"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "28",
+    "attributes" : [ "object", "functional" ],
+    "id" : "126"
+  }, {
+    "range" : "48",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "48",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "48",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "48",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "48",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "48",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "48",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "48",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "48",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "48",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://purl.org/dc/terms/license",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "license"
+    },
+    "domain" : "17",
+    "subproperty" : [ "64" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasRevisionOf",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "17",
+    "description" : {
+      "en" : "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasRevisionOf"
+    },
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasFunctionName",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "62",
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFunctionName"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasExecutableLocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "What is the URL for the executable?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Access",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasExecutableLocation"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInteroperableSoftware",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "123",
+    "description" : {
+      "undefined" : "What other software can interoperate with this one?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Compose",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInteroperableSoftware"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDockerImageLocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "What is the URL for pulling this docker image?"
+    },
+    "label" : {
+      "IRI-based" : "hasDockerImageLocation"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "functional" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputParameterDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "14",
+    "description" : {
+      "en" : "What is the parameter description?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputParameterDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "180"
+  }, {
+    "range" : "3",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasUsageInformation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "185",
+    "description" : {
+      "en" : "Is there any information about uses of this software version (paper DOIs, research labs, etc)?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUsageInformation"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "184"
+  }, {
+    "range" : "3",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "1",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "1",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOtherImplementationDetails",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "102",
+    "description" : {
+      "en" : "Are there any other important details about the implementation of this code (parallelization, special hardware, etc)?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOtherImplementationDetails"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasTextValue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "192",
+    "label" : {
+      "IRI-based" : "hasTextValue"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareVersionLimitDateOfSupport",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "55",
+    "description" : {
+      "en" : "When is the limit date of support for this version?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSoftwareVersionLimitDateOfSupport"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasPersonIdentifier",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "43",
+    "description" : {
+      "en" : "Provide a Twitter handle, ORCID Id, email address, github URL, home page, or any other unique identifier for this person"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Identify",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPersonIdentifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDocumentation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "Is there any on-line documentation about this software version?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDocumentation"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasEmailContact",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the e-mail contact for this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Discuss",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEmailContact"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "197"
+  }, {
+    "range" : "1",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "1",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasWorkflowDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "138",
+    "description" : {
+      "en" : "Describe the workflow?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Compose",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasWorkflowDescription"
+    },
+    "domain" : "122",
+    "attributes" : [ "object", "functional" ],
+    "id" : "200"
+  }, {
+    "range" : "1",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "1",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "1",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "47",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "1",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasSoftwareName",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "156",
+    "label" : {
+      "IRI-based" : "hasSoftwareName"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasAverageRunTime",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "30",
+    "description" : {
+      "en" : "Do you know how long it takes to run this software version on average?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAverageRunTime"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "207"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "112",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFileDataType",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "84",
+    "description" : {
+      "en" : "What is the input file type?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Input File Data Type\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFileDataType"
+    },
+    "domain" : "39",
+    "attributes" : [ "object", "functional" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutputDefaultValue",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the default value for this output?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":6}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputDefaultValue"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "functional" ],
+    "id" : "211"
+  }, {
+    "range" : "112",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "85",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "23",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "23",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCreator",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "3",
+    "description" : {
+      "en" : "Who created this software? (Project, Organization, Person, Initiative, etc.)"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Author\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCreator"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "219"
+  }, {
+    "range" : "48",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "48",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "85",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "85",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "40",
+    "domain" : "212",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "40",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "40",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "40",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "range" : "40",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputFileArgument",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the argument for this input file?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputFileArgument"
+    },
+    "domain" : "39",
+    "attributes" : [ "object", "functional" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutputDataFormat",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "79",
+    "description" : {
+      "undefined" : "What is the data format for this output?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Output Data Format\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputDataFormat"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://ontosoft.org/software#supersededBy",
+    "inverse" : "21",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "6",
+    "description" : {
+      "undefined" : "Which versions replace the current version?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "supersededBy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasShortDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasShortDescription"
+    },
+    "domain" : "125",
+    "subproperty" : [ "61", "49", "140", "180", "93", "155", "143", "115", "234" ],
+    "attributes" : [ "object", "functional" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasUniqueId",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "43",
+    "description" : {
+      "en" : "What is the DOI or any other unique identifier for this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUniqueId"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "235"
+  }, {
+    "range" : "40",
+    "domain" : "159",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "range" : "40",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
+  }, {
+    "range" : "6",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "range" : "6",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "107",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "6",
+    "domain" : "104",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "6",
+    "domain" : "193",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasTestDataDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "67",
+    "description" : {
+      "en" : "Can you describe the test data?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTestDataDescription"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "functional" ],
+    "id" : "243"
+  }, {
+    "range" : "165",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputParameterArgument",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "undefined" : "What is the argument for this input parameter?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputParameterArgument"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "functional" ],
+    "id" : "245"
+  }, {
+    "range" : "6",
+    "domain" : "183",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "6",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasUseStatistics",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "90",
+    "description" : {
+      "en" : "Are there any usage statistics for this software?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":5}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUseStatistics"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasImplementationLanguage",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "80",
+    "description" : {
+      "en" : "What language(s) is this software version written in?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Programming Language\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasImplementationLanguage"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "249"
+  }, {
+    "range" : "78",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "78",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasPreferredSoftwareCitation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "0",
+    "description" : {
+      "en" : "Is there a preferred publication or citation for this software?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Cite",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPreferredSoftwareCitation"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "252"
+  }, {
+    "range" : "78",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasProjectWebsite",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "Is there a project website for the software?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 4}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Locate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasProjectWebsite"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "254"
+  }, {
+    "range" : "78",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "1",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "range" : "78",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "257"
+  }, {
+    "range" : "78",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
+  }, {
+    "range" : "53",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "86",
+    "domain" : "221",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "53",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "range" : "86",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasBugFix",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "116",
+    "description" : {
+      "en" : "Are there any bug fixes that affects this software version?"
+    },
+    "annotations" : {
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Track",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBugFix"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "263"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasUseLimitations",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "159",
+    "description" : {
+      "en" : "Are there any constraints on use, situations it is not designed for, simplifications?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Relate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUseLimitations"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "264"
+  }, {
+    "range" : "86",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "range" : "86",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasInputParameter",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "13",
+    "description" : {
+      "undefined" : "What are the input parameters used for this function?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 7}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputParameter"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "267"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCompositionDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "122",
+    "description" : {
+      "en" : "Is this software typically used with other software in a workflow? (eg: for visualization, preprocessing, postprocessing, etc)"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Compose",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCompositionDescription"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasDependency",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "6",
+    "description" : {
+      "en" : "What other software does the software version require to be installed?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":5}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Install",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDependency"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "269"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCodeLocation",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "73",
+    "description" : {
+      "en" : "What is the URL for the code?"
+    },
+    "annotations" : {
+      "isRequired" : [ {
+        "identifier" : "isRequired",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Access",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCodeLocation"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "270"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasTestInstructions",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "63",
+    "description" : {
+      "en" : "Are there any specific instructions for testing this software version?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Run",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTestInstructions"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "271"
+  }, {
+    "range" : "221",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "272"
+  }, {
+    "range" : "40",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
+  }, {
+    "range" : "86",
+    "domain" : "165",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
+  }, {
+    "range" : "86",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
+  }, {
+    "range" : "40",
+    "domain" : "213",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "40",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
+  }, {
+    "range" : "40",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
+  }, {
+    "range" : "40",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
+  }, {
+    "range" : "40",
+    "domain" : "137",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
+  }, {
+    "range" : "40",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
+  }, {
+    "iri" : "http://ontosoft.org/software#similarSoftware",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "5",
+    "description" : {
+      "en" : "Is there any other similar software that you know of?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Relate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "similarSoftware"
+    },
+    "domain" : "5",
+    "attributes" : [ "symmetric", "object" ],
+    "id" : "282"
+  }, {
+    "iri" : "http://purl.org/dc/terms/creator",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "creator"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "17",
+    "subproperty" : [ "219" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasCommitmentOfSupport",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "40",
+    "description" : {
+      "en" : "How can a user get support for the software? (eg. Report bugs, request features and extensions, etc)"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":2}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Trust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCommitmentOfSupport"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "283"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutputDataType",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "84",
+    "description" : {
+      "en" : "What is the File I/O type?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 3}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Compose",
+        "type" : "iri"
+      } ],
+      "searchConfig" : [ {
+        "identifier" : "searchConfig",
+        "language" : "undefined",
+        "value" : "{\"facet\":\"Output Data Type\"}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputDataType"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "functional" ],
+    "id" : "284"
+  }, {
+    "range" : "40",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasActiveDevelopment",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "213",
+    "description" : {
+      "en" : "How is the software being developed or maintained?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\":1}",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/softwareCategories#Contribute",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActiveDevelopment"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "286"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasOutputDescription",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "163",
+    "description" : {
+      "undefined" : "What is the output description?"
+    },
+    "annotations" : {
+      "uiConfig" : [ {
+        "identifier" : "uiConfig",
+        "language" : "undefined",
+        "value" : "{\"position\": 2}",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputDescription"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "28",
+    "attributes" : [ "object", "functional" ],
+    "id" : "234"
+  }, {
+    "range" : "40",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "40",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "40",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
+  }, {
+    "range" : "40",
+    "domain" : "154",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  } ]
+}
