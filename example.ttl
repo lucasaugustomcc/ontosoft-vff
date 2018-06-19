@@ -1,0 +1,669 @@
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://w3id.org/ontosoft-vff/example/Weka>
+            rdfs:type           <http://ontosoft.org/software#Software> ;
+            <http://ontosoft.org/software#hasSoftwareName>  "Weka" ;
+            <http://ontosoft.org/software#hasShortDescription> "Weka is a open source project with a wide collection of machine learning algorithms." ;
+            <https://w3id.org/ontosoft-vff/ontology#hasLatestSoftwareVersion>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-Q2HwPx6yEjk1> ;
+            <http://ontosoft.org/software#hasSoftwareVersion>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p> , 
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-S4u1pW2VSy0f> ;
+            <http://ontosoft.org/software#hasImplementationLanguage>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#ProgrammingLanguage-KQuuzXDslqPf> ;
+            <http://ontosoft.org/software#supportsOperatingSystem>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#OperatingSystem-siRN7mdZs4IF> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#OperatingSystem-CUGYTnVJinjb> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#OperatingSystem-rgAnRAfCQgKu> .
+
+
+    <https://w3id.org/ontosoft-vff/example/weka.weka3.6.2>
+            rdfs:type           <http://ontosoft.org/software#SoftwareVersion> ;
+            rdfs:label  "Weka 3.6.2" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasContainerImage>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#DockerImage-d357oHJZY83x> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunction>
+                    <https://w3id.org/ontosoft-vff/example/weka.weka3.6.2-J48Modeler> ,
+                    <https://w3id.org/ontosoft-vff/example/weka.weka3.6.2-J48Classifier> ; 
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareVersionCategory>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#SoftwareVersionType-WRsiRfEgQOwL> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#SoftwareVersionType-zytFFqUWbUB8> ;
+            <http://ontosoft.org/software#hasVersionId>
+                    "Weka 3.6.2" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasReleaseDate>
+                    "2010-01-12T08:00:00Z"^^xsd:dateTime ;
+            <http://ontosoft.org/software#supersededBy>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-S4u1pW2VSy0f> .                  
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#DockerImage-d357oHJZY83x>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#ContainerImage> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasContainerImageInvocation>
+                    "docker run --rm -v \"$(pwd)\" -w \"$(pwd)\" ontosoft-vff/weka3.6.2" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasContainerImageLocation>
+                    "https://hub.docker.com/r/jamesmstone/weka/" .
+        
+    <https://w3id.org/ontosoft-vff/example/weka.weka3.6.2-J48Modeler>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription> 
+                    "Creates a model from a training data set for a classification task." ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    "java weka.classifiers.trees.J48 -t trainingData -c classIndex -d trainedModel" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    "weka.weka3.6.2-J48Modeler" ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-5AOwAuKwCDAh> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-LszEIzzHNybb> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-Xw0LzClgedWz> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-fs2tmFRLMmYn> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-Fwt66t8SWgkU> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-LszEIzzHNybb>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    "-t" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataFormat> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-DFNnZMz3EJMI> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-l49tp0lM2qZX> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-LszEIzzHNybb-I0PDEwmePrOj> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    "Sets training file" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    "trainingData" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-Xw0LzClgedWz>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputParameter> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterArgument>
+                    "-c" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-oAED89WG8gyr> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDefaultValue>
+                    "last" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDescription>
+                    "Sets index of class attribute" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterName>
+                    "classIndex" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-fs2tmFRLMmYn>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#Output> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-qL3vx3zSMj9a-CxwHyXi1651r-BQ978DCuXaIt> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JB6Ky0N118YU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-fixfo5MiHL1G> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-qL3vx3zSMj9a-CxwHyXi1651r-abb2FL5MKtMT> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDescription>
+                    "output file" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputName>
+                    "trainedModel" .
+        
+    <https://w3id.org/ontosoft-vff/example/weka.weka3.6.2-J48Classifier>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-EfmbRpNFhcsm> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-wn1Aa3pIRlKq> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    "weka.weka3.6.2.J48Classifier" ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-4YvHm2qCcWqJ> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputParameter-2k0yGur5y9XS> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-Ll78ZYSfm89l> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-EfmbRpNFhcsm>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "This classifier creates a decision tree to predict class membership." .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-wn1Aa3pIRlKq>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#FunctionInvocation> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "java weka.classifiers.trees.J48 -T testData -c classIndex > classification" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-iratoMFkIYH9> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-6y2v7i7O0ACJ> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-J5jDJjbRC2nV> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-z5iNWcpoRJ6t> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-tkvXzwiXVr2T> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-EP5xA8A1KmQJ> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-mh3aQZDrNABM> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-C4c2FdNEGx9h> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-RwjMrDY9Ouar> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-dQkAGSGARa1w> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-3YhNsKwrOcQW> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JB6Ky0N118YU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-prwp5SCcY3uE> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-oLNLFnUnNWJH> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-6ECtLACt9BCr> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-7potScPWFGom> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-7MNMpEQMi6Px> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-T9v4FISw5z3C> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-ZDCdrQGexhqK> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-le7KfQ7ebWYy> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-iusYhR2mBsia> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-j38VmRsQRivB> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-FsB2fVuRBGqt> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-wdVvEPG3i2r2> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-krqvBQs7HlKj> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-Jfah4pDtt8tW> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-Jfah4pDtt8tW>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "inputFile" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-krqvBQs7HlKj>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets model input file." .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-mkE4uKZCc0fJ-iratoMFkIYH9>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-l" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-YeU7rjTEMbeF> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataFormat> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-DFNnZMz3EJMI> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-4w8gVQsA6QgV> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-QZHrf4Lr2dax> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-cM6wcg9yJORM> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-r9YRJluCXMRM> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-r9YRJluCXMRM>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "testFile" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-cM6wcg9yJORM>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets test file." .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-YeU7rjTEMbeF>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-T" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-offQHSmbOi6R-mpyTqC0DwGHM-RWHJwXDe2AyY> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-offQHSmbOi6R-mpyTqC0DwGHM-s9ZXuD2wSEAc> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-offQHSmbOi6R-mpyTqC0DwGHM-RUv7jnh2ytqP> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-offQHSmbOi6R-mpyTqC0DwGHM-Fc5YyNUhxBMN> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-DJR6Op2syiL7> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDataType> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-vTOhXqoU19IY> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-WhiPO6yRkZcn> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-wBzisSyjSzRy> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-PIND3CTeZb2c> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-PIND3CTeZb2c>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classIndex" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-wBzisSyjSzRy>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets index of class attribute" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-DJR6Op2syiL7>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-c" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WqBA0o1siMAM-WhiPO6yRkZcn>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "last" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#Output> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-opYgNS6SdE6m-mV8Yx1NU7QZz-mPCQzrBeMGsF> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-4xI3SRU2pkPU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-opYgNS6SdE6m-mV8Yx1NU7QZz-eLoVmhrbHxnN> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4-JhcwRVEtDJdT> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4-0sk6P02oVrVQ> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JAnfHQDDbrec> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4-0sk6P02oVrVQ>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classification" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4-JhcwRVEtDJdT>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classification output" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-ApHoOMGjodcL> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-QlhIIfZg9ayc> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-IBoVKH9copWs> ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-OOQTWExaKeUY> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-aunoLushnPe7> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-Ls6lFhfBBxCD> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-IBoVKH9copWs>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "weka.weka3.6.2.ID3Modeler" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-ApHoOMGjodcL>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Class for constructing an unpruned decision tree based on the ID3 algorithm. " .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-QlhIIfZg9ayc>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#FunctionInvocation> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "java weka.classifiers.trees.Id3 -t trainingData -c classIndex -d trainedModel" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-BO2IvrW6Ay8A> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-DFNnZMz3EJMI> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataType> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-Be8Ko0qbt5Tm> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-PckvzUPuAN0J> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-RWUOZPoQZQtz> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-gw42hEl1Qep7> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-gw42hEl1Qep7>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "trainingData" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-RWUOZPoQZQtz>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets training file" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi-BO2IvrW6Ay8A>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-t" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-rgZl2F9cPDiy-Hhl2fh5ppgiv-MMl6b2c8bQXf> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-rgZl2F9cPDiy-Hhl2fh5ppgiv-xfDzgov82gMr> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-rgZl2F9cPDiy-Hhl2fh5ppgiv-gb2Ff5YMsfkC> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-rgZl2F9cPDiy-Hhl2fh5ppgiv-VdUf9EQOfRwl> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-BO4zgCDUq41s> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-vTOhXqoU19IY> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-A3Vp3PrR1XUW> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-cRng5lK0RsgD> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-vpCjgLMcXWkn> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-vpCjgLMcXWkn>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classIndex" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-cRng5lK0RsgD>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets index of class attribute" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-BO4zgCDUq41s>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-c" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz-A3Vp3PrR1XUW>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "last" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#Output> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-g7UgIJsCjdTF-v9O9aQU5RH99> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JB6Ky0N118YU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-FsB2fVuRBGqt> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-g7UgIJsCjdTF-tV04tSKzSJBk> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy-Qq9P1soZUPBD> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy-ptXxcb0dskPr> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JAnfHQDDbrec> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy-ptXxcb0dskPr>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "trainedModel" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy-Qq9P1soZUPBD>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "model output file" .
+        
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-8kF3vgpDYRdU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-H8ggsd2Z73Cc> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-sSjZqZ36xygg> ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-peYtKb75mjzU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW> , 
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-KIKVyPCP2rXQ> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-HikibXAyDrQ2> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-sSjZqZ36xygg>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "weka.weka3.6.2.ID3Classifier" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-8kF3vgpDYRdU>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "A decision tree is used to classify new unseen test cases by working down the decision tree using the values of the test case." .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-H8ggsd2Z73Cc>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#FunctionInvocation> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "java weka.classifiers.trees.Id3 -T testData -l inputFile -c classIndex > classification" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-ELDFkcNJ20A1> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JB6Ky0N118YU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-FsB2fVuRBGqt> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-bR3h3aWtKHqx> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-thgQDGdb2FFI> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-6cLDWfGOhK97> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-6cLDWfGOhK97>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "inputFile" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-thgQDGdb2FFI>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets input model file." .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-yDhGIShBdkXW-ELDFkcNJ20A1>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-l" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-LBFMYocgU2Ci> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-DFNnZMz3EJMI> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDataType> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-Be8Ko0qbt5Tm> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-fJJMiqtPpcRu> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-NMmC5T4Cz30B> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-LXmCSfPsxPuc> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-LXmCSfPsxPuc>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "testData" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-NMmC5T4Cz30B>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets test data." .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-YrCtzqT7t4KL-LBFMYocgU2Ci>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-T" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#InputFile> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-n2ohvWJlaKhf-ETiM4WOkUt94-5rdTwGu1S9N8> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-n2ohvWJlaKhf-ETiM4WOkUt94-My43ci2MdiNp> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-n2ohvWJlaKhf-ETiM4WOkUt94-feJNoJ24wBzY> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFileName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-n2ohvWJlaKhf-ETiM4WOkUt94-adCSkTlZxeBl> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-lqN169hTFr4w> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDataType> 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-vTOhXqoU19IY> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-BITWwO0JUMlm> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-vdwFEpZCkXth> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameterName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-HxNiOHOzDoHW> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-HxNiOHOzDoHW>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classIndex" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-vdwFEpZCkXth>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "Sets index of class attribute" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-lqN169hTFr4w>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-c" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-bVtkkNpyqhaT-BITWwO0JUMlm>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "last" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-KIKVyPCP2rXQ>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#Output> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputArgument>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-NsoQ9XDm7gq5-OITNBRBgNXeX> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataType>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataType-4xI3SRU2pkPU> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDefaultValue>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-NsoQ9XDm7gq5-MJ6WkplC4Up0> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-KIKVyPCP2rXQ-WtZ7JuFPYAEj> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-KIKVyPCP2rXQ-7xQtW89W7HRq> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutputDataFormat>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#DataFormat-JAnfHQDDbrec> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-KIKVyPCP2rXQ-7xQtW89W7HRq>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classification" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-lvGEFFAQOxze-KIKVyPCP2rXQ-WtZ7JuFPYAEj>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "classification output" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-h0SWRehM0RFo>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-ApHoOMGjodcL> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-QlhIIfZg9ayc> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-IBoVKH9copWs> ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-23gAhDZlEuzz> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-UaGVPbzu7sNi> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-nkINFc9wRoKz> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-L1BrTvHAoZRy> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-RVSUh7y5wHfV> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-uPOFfRGElKUP-g7UgIJsCjdTF-v9O9aQU5RH99>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-d" .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-KRckEcEsAJpm>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-DDmBbhRpVNoG> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-8Gcm2g5lYHXI> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-7Tiy7uORGDpc> ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-9TvdW4bJGVlJ> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-LszEIzzHNybb> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-Xw0LzClgedWz> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-DjzFHAdpRbtW-fs2tmFRLMmYn> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-tuItMyfrugxD> .
+    
+    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-qL3vx3zSMj9a-CxwHyXi1651r-BQ978DCuXaIt>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#TextEntity> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasTextValue>
+                    "-d" .
+
+    <https://w3id.org/ontosoft-vff/example/weka.weka3.9.2>
+            rdfs:type           <http://ontosoft.org/software#SoftwareVersion> ;
+            rdfs:label  "Weka 3.9.2" ;
+            <https://w3id.org/ontosoft-vff/ontology#hasDockerImage>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#DockerImage-d357oHJZY83x> ;
+            <http://ontosoft.org/software#hasSoftwareFunction>
+                    <https://w3id.org/ontosoft-vff/example/weka.weka3.9.2-J48Classifier> ;
+            <http://ontosoft.org/software#hasImplementationLanguage>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#ProgrammingLanguage-KQuuzXDslqPf> ;
+            <http://ontosoft.org/software#hasSoftwareVersionCategory>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#SoftwareVersionType-WRsiRfEgQOwL> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#SoftwareVersionType-zytFFqUWbUB8> ;
+            <http://ontosoft.org/software#hasVersionId>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Identifier-1BkuXt29FPyr> ;
+            <http://ontosoft.org/software#hasVeFrsionReleaseDate>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#DateEntity-OJfFTJ35o7gF> ;
+            <http://ontosoft.org/software#supersededBy>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-tUJLWQpvW72g> ;
+            <http://ontosoft.org/software#supersedes>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p> ;
+            <http://ontosoft.org/software#supportsOperatingSystem>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#OperatingSystem-siRN7mdZs4IF> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#OperatingSystem-CUGYTnVJinjb> , 
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#OperatingSystem-rgAnRAfCQgKu> .
+
+<https://w3id.org/ontosoft-vff/example/weka.weka3.9.2-J48Classifier>
+            rdfs:type       <https://w3id.org/ontosoft-vff/ontology#SoftwareFunction> ;
+            <http://www.w3.org/ns/prov#wasRevisionOf> <https://w3id.org/ontosoft-vff/example/weka.weka3.6.2-J48Classifier> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionDescription>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-EfmbRpNFhcsm> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionInvocation>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-wn1Aa3pIRlKq> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasSoftwareFunctionName>
+                    "weka.weka3.9.2.J48Classifier" ;
+            <https://w3id.org/ontosoft-vff/ontology#implementsFunctionality>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Functionality-4YvHm2qCcWqJ> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputFile> 
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasInputParameter>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputParameter-2k0yGur5y9XS> ;
+            <https://w3id.org/ontosoft-vff/ontology#hasOutput>
+                    <https://w3id.org/ontosoft-vff/example/software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4> ;
+            <https://w3id.org/ontosoft-vff/ontology#usesAlgorithm>
+                    <https://w3id.org/ontosoft-vff/example/software/enumerations#Algorithm-Fwt66t8SWgkU> .

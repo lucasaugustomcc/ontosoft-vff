@@ -35,7 +35,7 @@ RewriteCond %{HTTP_ACCEPT} \*/turtle
 RewriteRule ^$ https://lucasaugustomcc.github.io/ontosoft-vff/ontology/ontology.ttl [R=303,L]
 
 RewriteCond %{HTTP_ACCEPT} .+
-RewriteRule ^$ 406.html [R=406,L]
+RewriteRule ^$ https://lucasaugustomcc.github.io/ontosoft-vff/406.html [R=406,L]
 # Default response
 # ---------------------------
 # Rewrite rule to serve the RDF/XML content from the vocabulary URI by default
