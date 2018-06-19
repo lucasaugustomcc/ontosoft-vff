@@ -1,5 +1,8 @@
 # Competency questions
 
+The following SPARQL queries can be run against the RDF example available at: <https://w3id.org/ontosoft-vff/example>. 
+The ontology is available at <https://w3id.org/ontosoft-vff/ontology>.
+
 We use the following namespaces:
 ```sparql
 prefix sw: <http://ontosoft.org/software#>
