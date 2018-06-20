@@ -68,7 +68,7 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 ```
 
 ### Results
-| inputName | inputDataFormatName | inputDataTypeName | inputDataTypeName | outputName | outputDataFormatName | outputDataTypeName |
+| Name | DataFormatName | DataTypeName | DataTypeName | outputName | DataFormatName | DataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
 | testFile | ARFF | Tabular | classification | Java Object | Java Object | Text |
 
