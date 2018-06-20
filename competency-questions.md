@@ -1,8 +1,8 @@
 # Competency questions
 
-The following SPARQL queries can be run against the example RDF available at: <https://w3id.org/ontosoft-vff/example>. 
+The following SPARQL queries can be run against the example RDF available at: https://w3id.org/ontosoft-vff/example. 
 
-The ontology is available at <https://w3id.org/ontosoft-vff/ontology>.
+The ontology is available at https://w3id.org/ontosoft-vff/ontology.
 
 We use the following namespaces:
 ```sparql
@@ -30,7 +30,7 @@ select ?sw ?swVersion where {
 
 ### Results
 | sw | swVersion |
-|----|-----------|
+|----|---|
 | ex:Weka | ex:weka.weka3.6.2 |
 
 **Query 2:** Are there any newer versions for a given function?
