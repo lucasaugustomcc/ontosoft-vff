@@ -29,9 +29,18 @@ select ?sw ?swVersion where {
 ```
 
 ### Results
-| sw | swVersion |
-|----|-----------|
-| ex:Weka | ex:weka.weka3.6.2 |
+<table>
+<thead>
+<tr>
+<th>sw</th>
+<th>swVersion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ex:Weka</td>
+<td>ex:weka.weka3.6.2</td>
+</tr></tbody></table>
 
 **Query 2:** Are there any newer versions for a given function?
 
@@ -45,45 +54,34 @@ select ?swVersionNew ?swFunctionNew where {
 ```
 
 ### Results
-| swVersionNew | swFunctionNew |
-|--------------|---------------|
-|ex:weka.weka3.9.2|ex:weka.weka3.9.2-J48Classifier|
+<table>
+<thead>
+<tr>
+<th>swVersionNew</th>
+<th>swFunctionNew</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ex:weka.weka3.9.2</td>
+<td>ex:weka.weka3.9.2-J48Classifier</td>
+</tr></tbody></table>
 
 **Query 3:** What are the differences between two versions of
 a given software function?
 
 ```sparql
-select ?inputName ?inputDataFormat ?inputDataType ?outputName
-	?outputDataFormat ?outputDataType where {
-	ex:weka.weka3.6.2-J48Classifier rdfs:type vff:SoftwareFunction ;
-		vff:hasInputFile ?input ;
-		vff:hasOutput ?output .
-	?input vff:hasInputFileDataFormat ?inputDataFormat ;
-		vff:hasInputFileDataType ?inputDataType ;
-		vff:hasInputFileName ?inputName .
-	?output vff:hasOutputDataFormat ?outputDataFormat ;
-		vff:hasOutputDataType ?outputDataType ;
-		vff:hasOutputName ?outputName .
-}
-```
-
-### Results
-| Name | DataFormatName | DataTypeName | outputName | DataFormatName | DataTypeName |
-|-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF"  | "Tabular" | "classification" | "Java Object" | "Text" |
-
-```sparql
-select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
+select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
 	?outputDataFormatName ?outputDataTypeName where {
-	ex:weka.weka3.9.2-J48Classifier rdfs:type vff:SoftwareFunction ;
-		vff:hasInputFile ?input ;
+	ex:weka.weka3.6.2-J48Classifier rdfs:type vff:SoftwareFunction ;
+		vff:hasInputFile ?inputFile ;
         vff:hasInputParameter ?inputParameter ;
 		vff:hasOutput ?output .
-	?input vff:hasInputFileDataFormat ?inputDataFormat ;
-		vff:hasInputFileDataType ?inputDataType ;
-		vff:hasInputFileName ?inputName .
-    ?inputDataType rdfs:label ?inputDataTypeName .
-    ?inputDataFormat rdfs:label ?inputDataFormatName .
+	?input vff:hasInputFileDataFormat ?inputFileDataFormat ;
+		vff:hasInputFileDataType ?inputFileDataType ;
+		vff:hasInputFileName ?inputFileName .
+    ?inputFileDataType rdfs:label ?inputFileDataTypeName .
+    ?inputFileDataFormat rdfs:label ?inputFileDataFormatName .
     ?inputParameter 
         vff:hasInputParameterDataType ?inputParameterDataType ;
 		vff:hasInputParameterName ?inputParameterName .
@@ -100,22 +98,76 @@ select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?i
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>DataFormatName</th>
-<th>DataTypeName</th>
+<th>inputFileName</th>
+<th>inputFileDataFormatName</th>
+<th>inputFileDataTypeName</th>
+<th>inputParameterName</th>
+<th>inputParameterDataTypeName</th>
 <th>outputName</th>
-<th>DataFormatName</th>
-<th>DataTypeName</th>
+<th>outputDataFormatName</th>
+<th>outputDataTypeName</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>testFile</td>
-<td>ARFF</td>
-<td>Tabular</td>
-<td>classification</td>
-<td>Java Object</td>
-<td>Text</td>
+<td>"testFile"</td>
+<td>"ARFF"</td>
+<td>"Tabular"</td>
+<td>"classIndex"</td>
+<td>"String"</td>
+<td>"classification"</td>
+<td>"Java Object"</td>
+<td>"Text"</td>
+</tr></tbody></table>
+
+```sparql
+select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
+	?outputDataFormatName ?outputDataTypeName where {
+	ex:weka.weka3.9.2-J48Classifier rdfs:type vff:SoftwareFunction ;
+		vff:hasInputFile ?inputFile ;
+        vff:hasInputParameter ?inputParameter ;
+		vff:hasOutput ?output .
+	?input vff:hasInputFileDataFormat ?inputFileDataFormat ;
+		vff:hasInputFileDataType ?inputFileDataType ;
+		vff:hasInputFileName ?inputFileName .
+    ?inputFileDataType rdfs:label ?inputFileDataTypeName .
+    ?inputFileDataFormat rdfs:label ?inputFileDataFormatName .
+    ?inputParameter 
+        vff:hasInputParameterDataType ?inputParameterDataType ;
+		vff:hasInputParameterName ?inputParameterName .
+    ?inputParameterDataType rdfs:label ?inputParameterDataTypeName .
+	?output vff:hasOutputDataFormat ?outputDataFormat ;
+		vff:hasOutputDataType ?outputDataType ;
+		vff:hasOutputName ?outputName .
+    ?outputDataType rdfs:label ?outputDataTypeName .
+    ?outputDataFormat rdfs:label ?outputDataFormatName .
+}
+```
+
+### Results
+<table>
+<thead>
+<tr>
+<th>inputFileName</th>
+<th>inputFileDataFormatName</th>
+<th>inputFileDataTypeName</th>
+<th>inputParameterName</th>
+<th>inputParameterDataTypeName</th>
+<th>outputName</th>
+<th>outputDataFormatName</th>
+<th>outputDataTypeName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"testFile"</td>
+<td>"ARFF"</td>
+<td>"Tabular"</td>
+<td>"classIndex"</td>
+<td>"String"</td>
+<td>"classification"</td>
+<td>"Java Object"</td>
+<td>"Text"</td>
 </tr></tbody></table>
 
 
@@ -123,57 +175,102 @@ select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?i
 
 ```sparql
 select ?swFunction where {
-	ex:weka.weka3.6.2-J48Classifier rdf:type sw:SoftwareFunction ;
+	ex:weka.weka3.6.2-J48Classifier rdfs:type vff:SoftwareFunction ;
 		vff:implementsFunctionality ?functionality .
-	?swFunction rdf:type vff:SoftwareFunction ;
+	?swFunction rdfs:type vff:SoftwareFunction ;
 		vff:implementsFunctionality ?functionality .
-	ex:weka.weka3.6.2 vff:hasSoftwareFunction ?swFunction .
+	ex:weka.weka3.9.2 vff:hasSoftwareFunction ?swFunction .
+  	FILTER(ex:weka.weka3.9.2-J48Classifier != ?swFunction) .
 }
 ```
 
 ### Results
-
+<table>
+<thead>
+<tr>
+<th>swFunction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"ex:weka.weka3.9.2-ID3Classifier"</td>
+</tr></tbody></table>
 
 **Query 5:** How to invoke a given software function?
 
 ```sparql
 select ?functionInvocation ?containerInvocation where {
-	<ex:weka3.9.2-ID3Classifier> rdfs:type vff:SoftwareFunction ;
-		vff:hasFunctionInvocation ?functionInvocation .
+	ex:weka.weka3.9.2-ID3Classifier rdfs:type vff:SoftwareFunction ;
+		vff:hasSoftwareFunctionInvocation ?functionInvocation .
 	?swVersion rdfs:type sw:SoftwareVersion ;
-		hasContainerInvocation ?containerInvocation ;
-		hasSoftwareFunction ex:weka.weka3.9.2-ID3Classifier .
+        vff:hasContainerImage ?containerImage ;
+		vff:hasSoftwareFunction ex:weka.weka3.9.2-ID3Classifier .
+    ?containerImage vff:hasContainerImageInvocation ?containerInvocation .
 }
 ```
 
 ### Results
-
+<table>
+<thead>
+<tr>
+<th>functionInvocation</th>
+<th>containerInvocation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"java -jar weka.classifiers.trees.Id3 -T testData -l inputFile -c classIndex > classification"</td>
+<td>"docker run --rm -v "$(pwd)" -w "$(pwd)" ontosoft-vff/weka3.6.2"</td>
+</tr></tbody></table>
 
 
 **Query 6:** 
-*a)* Are there any known issues that affects a given
-software function?
+*a)* Are there any known issues that affects a given software function?
 
 ```sparql
 select ?bug ?bugDescription where {
-	?bug rdfs:type sw:KnownIssue ;
+	?bug rdfs:type vff:KnownIssue ;
 		vff:hasKnownIssueDescription ?bugDescription ;
 		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
 }
 ```
 
 ### Results
+<table>
+<thead>
+<tr>
+<th>bug</th>
+<th>bugDescription</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ex:weka.weka3.6.2-J48Classifier-Issue</td>
+<td>"A bug description example."</td>
+</tr></tbody></table>
 
-
-*b)* Are there any important changes associated with new
-versions of a given software function?
+*b)* Are there any important changes associated with new versions of a given software function?
 
 ```sparql
 select ?bugFix ?bugFixDescription where {
-	?bugfix rdfs:type vff:BugFix ;
-		vff:hasBugFixDescription ?description .
+	?bugFix rdfs:type vff:BugFix ;
+		vff:hasBugFixDescription ?bugFixDescription ;
+		vff:fixesKnownIssue ?knownIssue .
+	?knownIssue
 		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
 }
 ```
 
 ### Results
+<table>
+<thead>
+<tr>
+<th>bug</th>
+<th>bugDescription</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ex:weka.weka3.9.2-BugFix</td>
+<td>"A bugfix description example."</td>
+</tr></tbody></table>
