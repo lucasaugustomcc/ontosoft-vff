@@ -1,6 +1,7 @@
 # Competency questions
 
-The following SPARQL queries can be run against the RDF example available at: <https://w3id.org/ontosoft-vff/example>. 
+The following SPARQL queries can be run against the example RDF available at: <https://w3id.org/ontosoft-vff/example>. 
+
 The ontology is available at <https://w3id.org/ontosoft-vff/ontology>.
 
 We use the following namespaces:
@@ -45,7 +46,7 @@ select ?swVersionNew ?swFunctionNew where {
 
 ### Results
 | swVersionNew | swFunctionNew |
-|----|-----------|
+|--------------|---------------|
 |ex:weka.weka3.9.2|ex:weka.weka3.9.2-J48Classifier|
 
 **Query 3:** What are the differences between two versions of
@@ -67,18 +68,11 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 ```
 
 ### Results
-| inputName | inputDataFormatName | inputDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
+| inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "Text" |
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
 
 ```sparql
-PREFIX sw: <http://ontosoft.org/software#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX vf: <https://w3id.org/valueflows/>
-prefix ex: <https://w3id.org/ontosoft-vff/example/>
-prefix vff: <https://w3id.org/ontosoft-vff/ontology#>
-prefix prov: <http://www.w3.org/ns/prov#>
-
 select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
 	?outputDataFormatName ?outputDataTypeName where {
 	ex:weka.weka3.9.2-J48Classifier rdfs:type vff:SoftwareFunction ;
@@ -102,7 +96,10 @@ select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?i
 }
 ```
 
-### Result
+### Results
+| inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
+|-----------|-----------------|---------------|------------|------------------|----------------|
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
 
 
 
@@ -118,6 +115,11 @@ select ?swFunction where {
 }
 ```
 
+### Results
+| inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
+|-----------|-----------------|---------------|------------|------------------|----------------|
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+
 **Query 5:** How to invoke a given software function?
 
 ```sparql
@@ -129,6 +131,12 @@ select ?functionInvocation ?containerInvocation where {
 		hasSoftwareFunction ex:weka.weka3.9.2-ID3Classifier .
 }
 ```
+
+### Results
+| inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
+|-----------|-----------------|---------------|------------|------------------|----------------|
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+
 
 **Query 6:** 
 *a)* Are there any known issues that affects a given
@@ -142,6 +150,11 @@ select ?bug ?bugDescription where {
 }
 ```
 
+### Results
+| inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
+|-----------|-----------------|---------------|------------|------------------|----------------|
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+
 *b)* Are there any important changes associated with new
 versions of a given software function?
 
@@ -152,3 +165,8 @@ select ?bugFix ?bugFixDescription where {
 		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
 }
 ```
+
+### Results
+| inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
+|-----------|-----------------|---------------|------------|------------------|----------------|
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
