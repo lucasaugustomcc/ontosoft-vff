@@ -70,7 +70,7 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 ### Results
 | Name | DataFormatName | DataTypeName | outputName | DataFormatName | DataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| testFile | ARFF | Tabular | classification | Java Object | Text |
+| "testFile" | "ARFF"  | "Tabular" | "classification" | "Java Object" | "Text" |
 
 ```sparql
 select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
@@ -97,7 +97,26 @@ select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?i
 ```
 
 ### Results
-
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataFormatName</th>
+<th>DataTypeName</th>
+<th>outputName</th>
+<th>DataFormatName</th>
+<th>DataTypeName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>testFile</td>
+<td>ARFF</td>
+<td>Tabular</td>
+<td>classification</td>
+<td>Java Object</td>
+<td>Text</td>
+</tr></tbody></table>
 
 
 **Query 4:** Are there any similar functions to a given function in newer software versions?
