@@ -27,6 +27,7 @@ select ?sw ?swVersion where {
 }
 ```
 
+### Results
 | sw | swVersion |
 |----|-----------|
 | ex:Weka | ex:weka.weka3.6.2 |
@@ -42,6 +43,7 @@ select ?swVersionNew ?swFunctionNew where {
 }
 ```
 
+### Results
 | swVersionNew | swFunctionNew |
 |----|-----------|
 |ex:weka.weka3.9.2|ex:weka.weka3.9.2-J48Classifier|
@@ -64,24 +66,45 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 }
 ```
 
-| inputName | inputDataFormat | inputDataType | outputName | outputDataFormat |	outputDataType |
+### Results
+| inputName | inputDataFormatName | inputDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| ex:software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#InputFile-k8GavVRBIAtk-r9YRJluCXMRM | ex:software/enumerations#DataFormat-DFNnZMz3EJMI | ex:software/enumerations#DataType-4w8gVQsA6QgV | ex:software/Software-8ezbCNl93vor/version/SoftwareVersion-ecRM9fAtEp6p#Function-WjGNHbI2Eubi-WETPvoFZpbM4-0sk6P02oVrVQ | ex:software/enumerations#DataFormat-JAnfHQDDbrec | ex:software/enumerations#DataType-4xI3SRU2pkPU |
+| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "Text" |
 
 ```sparql
-select ?inputName ?inputDataFormat ?inputDataType ?outputName
-	?outputDataFormat ?outputDataType where {
+PREFIX sw: <http://ontosoft.org/software#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX vf: <https://w3id.org/valueflows/>
+prefix ex: <https://w3id.org/ontosoft-vff/example/>
+prefix vff: <https://w3id.org/ontosoft-vff/ontology#>
+prefix prov: <http://www.w3.org/ns/prov#>
+
+select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
+	?outputDataFormatName ?outputDataTypeName where {
 	ex:weka.weka3.9.2-J48Classifier rdfs:type vff:SoftwareFunction ;
 		vff:hasInputFile ?input ;
+        vff:hasInputParameter ?inputParameter ;
 		vff:hasOutput ?output .
 	?input vff:hasInputFileDataFormat ?inputDataFormat ;
 		vff:hasInputFileDataType ?inputDataType ;
 		vff:hasInputFileName ?inputName .
+    ?inputDataType rdfs:label ?inputDataTypeName .
+    ?inputDataFormat rdfs:label ?inputDataFormatName .
+    ?inputParameter 
+        vff:hasInputParameterDataType ?inputParameterDataType ;
+		vff:hasInputParameterName ?inputParameterName .
+    ?inputParameterDataType rdfs:label ?inputParameterDataTypeName .
 	?output vff:hasOutputDataFormat ?outputDataFormat ;
 		vff:hasOutputDataType ?outputDataType ;
 		vff:hasOutputName ?outputName .
+    ?outputDataType rdfs:label ?outputDataTypeName .
+    ?outputDataFormat rdfs:label ?outputDataFormatName .
 }
 ```
+
+### Result
+
+
 
 **Query 4:** Are there any similar functions to a given function in newer software versions?
 
