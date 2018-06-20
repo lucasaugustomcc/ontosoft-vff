@@ -70,7 +70,7 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 ### Results
 | inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+| `"testFile"` | `"ARFF"` | `"Tabular"` | `"classification"` | `"Java Object"` | `"classification"` | `"Java Object"` | `"Text"` |
 
 ```sparql
 select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
@@ -99,7 +99,7 @@ select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?i
 ### Results
 | inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+| `"testFile"` | `"ARFF"` | `"Tabular"` | `"classification"` | `"Java Object"` | `"classification"` | `"Java Object"` | `"Text"` |
 
 
 
@@ -118,7 +118,7 @@ select ?swFunction where {
 ### Results
 | inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+| `"testFile"` | `"ARFF"` | `"Tabular"` | `"classification"` | `"Java Object"` | `"classification"` | `"Java Object"` | `"Text"` |
 
 **Query 5:** How to invoke a given software function?
 
@@ -135,7 +135,7 @@ select ?functionInvocation ?containerInvocation where {
 ### Results
 | inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+| `"testFile"` | `"ARFF"` | `"Tabular"` | `"classification"` | `"Java Object"` | `"classification"` | `"Java Object"` | `"Text"` |
 
 
 **Query 6:** 
@@ -153,7 +153,7 @@ select ?bug ?bugDescription where {
 ### Results
 | inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+| `"testFile"` | `"ARFF"` | `"Tabular"` | `"classification"` | `"Java Object"` | `"classification"` | `"Java Object"` | `"Text"` |
 
 *b)* Are there any important changes associated with new
 versions of a given software function?
@@ -169,4 +169,4 @@ select ?bugFix ?bugFixDescription where {
 ### Results
 | inputName | inputDataFormatName | inputDataTypeName | inputParameterName | inputParameterDataTypeName | outputName | outputDataFormatName |	outputDataTypeName |
 |-----------|-----------------|---------------|------------|------------------|----------------|
-| "testFile" | "ARFF" | "Tabular" | "classification" | "Java Object" | "classification" | "Java Object" | "Text" |
+| `"testFile"` | `"ARFF"` | `"Tabular"` | `"classification"` | `"Java Object"` | `"classification"` | `"Java Object"` | `"Text"` |
