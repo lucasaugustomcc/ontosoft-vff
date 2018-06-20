@@ -68,7 +68,9 @@ select ?inputName ?inputDataFormat ?inputDataType ?outputName
 ```
 
 ### Results
-
+| inputName | inputDataFormatName | inputDataTypeName  | outputName | outputDataFormatName | outputDataTypeName |
+|-----------|-----------------|---------------|------------|------------------|----------------|
+| testFile | ARFF | Tabular | classification | Java Object | Text |
 
 ```sparql
 select ?inputName ?inputDataFormatName ?inputDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
