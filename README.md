@@ -15,6 +15,7 @@ Access to:
 - Yolanda Gil (USC/ISI, USA)
 
 ## Acknowledgements
-- FAPESP
-- DARPA
+- the US National Science Foundation under award ICER-1440323 and ICER- 1632211 (EarthCube RCN IS-GEO)
+- the Defense Advanced Research Projects Agency under award W911NF-18-1-0027
+- the Sao Paulo Research Foundation (FAPESP) under grants 2017/03570-3, 2014/23861-4 and 2013/08293-7.
 - Varun Ratnakar

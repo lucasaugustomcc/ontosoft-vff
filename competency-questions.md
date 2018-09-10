@@ -17,13 +17,13 @@ prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
 prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> 
 ```
 
-**Query 1:** What is the software and software version of the function invoked in the implementation of a given workflow component?
+**Query 1:** Given a software function invoked in a workflow component implementation (e.g. *ex:weka.weka3.6.2-J48Modeler*), what is the software and software version of this function?
 
 ```sparql
 select ?sw ?swVersion where {
-	?swVersion rdfs:type sw:SoftwareVersion ;
+	?swVersion rdf:type sw:SoftwareVersion ;
 		vff:hasSoftwareFunction ex:weka.weka3.6.2-J48Modeler .
-	?sw rdfs:type sw:Software ;
+	?sw rdf:type sw:Software ;
 		sw:hasSoftwareVersion ?swVersion .
 }
 ```
@@ -42,13 +42,13 @@ select ?sw ?swVersion where {
 <td>ex:weka.weka3.6.2</td>
 </tr></tbody></table>
 
-**Query 2:** Are there any newer versions for a given function?
+**Query 2:** Are there any newer versions for a given function (e.g. *ex:weka.weka3.6.2-J48Classifier*)?
 
 ```sparql
 select ?swVersionNew ?swFunctionNew where {
-	?swVersionNew rdfs:type sw:SoftwareVersion ;
-		sw:hasSoftwareFunction ?swFunctionNew .
-	?swFunctionNew rdfs:type vff:SoftwareFunction ;
+	?swVersionNew rdf:type sw:SoftwareVersion ;
+		vff:hasSoftwareFunction ?swFunctionNew .
+	?swFunctionNew rdf:type vff:SoftwareFunction ;
 		prov:wasRevisionOf ex:weka.weka3.6.2-J48Classifier .
 }
 ```
@@ -67,13 +67,13 @@ select ?swVersionNew ?swFunctionNew where {
 <td>ex:weka.weka3.9.2-J48Classifier</td>
 </tr></tbody></table>
 
-**Query 3:** What are the differences between two versions of
-a given software function?
+**Query 3:** What are the differences between two versions of a given software function?
+In this example, we compare the query results for *ex:weka.weka3.6.2-J48Classifier* and *ex:weka.weka3.9.2-J48Classifier*. We conclude that the function in both versions has the same inputs and outputs.
 
 ```sparql
 select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
 	?outputDataFormatName ?outputDataTypeName where {
-	ex:weka.weka3.6.2-J48Classifier rdfs:type vff:SoftwareFunction ;
+	**ex:weka.weka3.6.2-J48Classifier** rdf:type vff:SoftwareFunction ;
 		vff:hasInputFile ?inputFile ;
         vff:hasInputParameter ?inputParameter ;
 		vff:hasOutput ?output .
@@ -123,7 +123,7 @@ select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputPara
 ```sparql
 select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
 	?outputDataFormatName ?outputDataTypeName where {
-	ex:weka.weka3.9.2-J48Classifier rdfs:type vff:SoftwareFunction ;
+	**ex:weka.weka3.9.2-J48Classifier** rdf:type vff:SoftwareFunction ;
 		vff:hasInputFile ?inputFile ;
         vff:hasInputParameter ?inputParameter ;
 		vff:hasOutput ?output .
@@ -172,15 +172,15 @@ select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputPara
 
 
 **Query 4:** Are there any similar functions to a given function in newer software versions?
+In this example, we are interested in a function with the same functionality of *ex:weka.weka3.6.2-J48Classifier* in the *ex:weka.weka3.9.2* Weka version.
 
 ```sparql
 select ?swFunction where {
-	ex:weka.weka3.6.2-J48Classifier rdfs:type vff:SoftwareFunction ;
+	**ex:weka.weka3.6.2-J48Classifier** rdf:type vff:SoftwareFunction ;
 		vff:implementsFunctionality ?functionality .
-	?swFunction rdfs:type vff:SoftwareFunction ;
+	?swFunction rdf:type vff:SoftwareFunction ;
 		vff:implementsFunctionality ?functionality .
 	ex:weka.weka3.9.2 vff:hasSoftwareFunction ?swFunction .
-  	FILTER(ex:weka.weka3.9.2-J48Classifier != ?swFunction) .
 }
 ```
 
@@ -196,15 +196,15 @@ select ?swFunction where {
 <td>"ex:weka.weka3.9.2-ID3Classifier"</td>
 </tr></tbody></table>
 
-**Query 5:** How to invoke a given software function?
+**Query 5:** How to invoke a given software function (e.g. *ex:weka.weka3.9.2-ID3Classifier*)?
 
 ```sparql
 select ?functionInvocation ?containerInvocation where {
-	ex:weka.weka3.9.2-ID3Classifier rdfs:type vff:SoftwareFunction ;
+	ex:weka.weka3.9.2-ID3Classifier rdf:type vff:SoftwareFunction ;
 		vff:hasSoftwareFunctionInvocation ?functionInvocation .
-	?swVersion rdfs:type sw:SoftwareVersion ;
+	?swVersion rdf:type sw:SoftwareVersion ;
         vff:hasContainerImage ?containerImage ;
-		vff:hasSoftwareFunction ex:weka.weka3.9.2-ID3Classifier .
+		vff:hasSoftwareFunction **ex:weka.weka3.9.2-ID3Classifier** .
     ?containerImage vff:hasContainerImageInvocation ?containerInvocation .
 }
 ```
@@ -225,13 +225,13 @@ select ?functionInvocation ?containerInvocation where {
 
 
 **Query 6:** 
-*a)* Are there any known issues that affects a given software function?
+*a)* Are there any known issues that affects a given software function (e.g. *ex:weka.weka3.6.2-J48Classifier*)?
 
 ```sparql
 select ?bug ?bugDescription where {
-	?bug rdfs:type vff:KnownIssue ;
+	?bug rdf:type vff:KnownIssue ;
 		vff:hasKnownIssueDescription ?bugDescription ;
-		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
+		vff:affectsSoftwareFunction **ex:weka.weka3.6.2-J48Classifier** .
 }
 ```
 
@@ -249,15 +249,15 @@ select ?bug ?bugDescription where {
 <td>"A bug description example."</td>
 </tr></tbody></table>
 
-*b)* Are there any important changes associated with new versions of a given software function?
+*b)* Are there any important changes associated with new versions of a given software function (e.g. *ex:weka.weka3.6.2-J48Classifier*)?
 
 ```sparql
 select ?bugFix ?bugFixDescription where {
-	?bugFix rdfs:type vff:BugFix ;
+	?bugFix rdf:type vff:BugFix ;
 		vff:hasBugFixDescription ?bugFixDescription ;
 		vff:fixesKnownIssue ?knownIssue .
 	?knownIssue
-		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
+		vff:affectsSoftwareFunction **ex:weka.weka3.6.2-J48Classifier** .
 }
 ```
 
