@@ -73,7 +73,7 @@ In this example, we compare the query results for *ex:weka.weka3.6.2-J48Classifi
 ```sparql
 select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
 	?outputDataFormatName ?outputDataTypeName where {
-	**ex:weka.weka3.6.2-J48Classifier** rdf:type vff:SoftwareFunction ;
+	ex:weka.weka3.6.2-J48Classifier rdf:type vff:SoftwareFunction ;
 		vff:hasInputFile ?inputFile ;
         vff:hasInputParameter ?inputParameter ;
 		vff:hasOutput ?output .
@@ -123,7 +123,7 @@ select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputPara
 ```sparql
 select ?inputFileName ?inputFileDataFormatName ?inputFileDataTypeName ?inputParameterName ?inputParameterDataTypeName ?outputName
 	?outputDataFormatName ?outputDataTypeName where {
-	**ex:weka.weka3.9.2-J48Classifier** rdf:type vff:SoftwareFunction ;
+	ex:weka.weka3.9.2-J48Classifier rdf:type vff:SoftwareFunction ;
 		vff:hasInputFile ?inputFile ;
         vff:hasInputParameter ?inputParameter ;
 		vff:hasOutput ?output .
@@ -176,7 +176,7 @@ In this example, we are interested in a function with the same functionality of 
 
 ```sparql
 select ?swFunction where {
-	**ex:weka.weka3.6.2-J48Classifier** rdf:type vff:SoftwareFunction ;
+	ex:weka.weka3.6.2-J48Classifier rdf:type vff:SoftwareFunction ;
 		vff:implementsFunctionality ?functionality .
 	?swFunction rdf:type vff:SoftwareFunction ;
 		vff:implementsFunctionality ?functionality .
@@ -204,7 +204,7 @@ select ?functionInvocation ?containerInvocation where {
 		vff:hasSoftwareFunctionInvocation ?functionInvocation .
 	?swVersion rdf:type sw:SoftwareVersion ;
         vff:hasContainerImage ?containerImage ;
-		vff:hasSoftwareFunction **ex:weka.weka3.9.2-ID3Classifier** .
+		vff:hasSoftwareFunction ex:weka.weka3.9.2-ID3Classifier .
     ?containerImage vff:hasContainerImageInvocation ?containerInvocation .
 }
 ```
@@ -231,7 +231,7 @@ select ?functionInvocation ?containerInvocation where {
 select ?bug ?bugDescription where {
 	?bug rdf:type vff:KnownIssue ;
 		vff:hasKnownIssueDescription ?bugDescription ;
-		vff:affectsSoftwareFunction **ex:weka.weka3.6.2-J48Classifier** .
+		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
 }
 ```
 
@@ -257,7 +257,7 @@ select ?bugFix ?bugFixDescription where {
 		vff:hasBugFixDescription ?bugFixDescription ;
 		vff:fixesKnownIssue ?knownIssue .
 	?knownIssue
-		vff:affectsSoftwareFunction **ex:weka.weka3.6.2-J48Classifier** .
+		vff:affectsSoftwareFunction ex:weka.weka3.6.2-J48Classifier .
 }
 ```
 
